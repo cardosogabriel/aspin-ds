@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-white">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alert</title>
+  <link href="dist/styles.css" rel="stylesheet">
+  <link href="dist/fontawesome/all.min.css" rel="stylesheet">
+  <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
+  <link href="dist/prism/prism.css" rel="stylesheet">
+  <script src="dist/prism/prism.js"></script>
+</head>
+<body class="h-full">
+
+  <div>
+    <!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. -->
+    <div class="relative z-50 lg:hidden" role="dialog" aria-modal="true">
+      <div class="fixed inset-0 bg-gray-900/80"></div>
+      <div class="fixed inset-0 flex">
+        <div class="relative mr-16 flex w-full max-w-xs flex-1">
+          <div class="absolute left-full top-0 flex w-16 justify-center pt-5">
+            <button type="button" class="-m-2.5 p-2.5">
+              <span class="sr-only">Close sidebar</span>
+              <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Sidebar component, swap this element with another sidebar if you like -->
+          <div class="flex grow flex-col gap-y-5 overflow-y-auto bg-white px-6 pb-2">
+            <div class="flex h-16 shrink-0 items-center">
+              <img class="h-8 w-auto" src="dist/img/aspin-logo.png" alt="Your Company">
+            </div>
+            <nav class="flex flex-1 flex-col">
+              <ul class="flex flex-1 flex-col gap-y-7">
+                <li>
+                  <div class="text-xs font-semibold leading-6 text-gray-400">Components</div>
+                  <ul class="-mx-2 mt-2 space-y-1">
+                    <li>
+                      <a href="button.html" class="bg-gray-50 text-link group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                        Button
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Static sidebar for desktop -->
+    <div class="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
+      <!-- Sidebar component, swap this element with another sidebar if you like -->
+      <div class="flex grow flex-col gap-y-5 overflow-y-auto border-r border-gray-200 bg-white px-6">
+        <div class="flex h-16 shrink-0 items-center">
+          <img class="h-8 w-auto" src="dist/img/aspin-logo.png" alt="Your Company">
+        </div>
+        <nav class="flex flex-1 flex-col">
+          <ul class="flex flex-1 flex-col gap-y-7">
+            <li>
+              <div class="text-xs font-semibold leading-6 text-gray-400">Components</div>
+              <ul class="-mx-2 mt-2 space-y-1">
+                <li>
+                  <!-- Current: "bg-gray-50 text-indigo-600", Default: "text-gray-700 hover:text-indigo-600 hover:bg-gray-50" -->
+                  <a href="button.html" class="bg-gray-50 text-link group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                    Alert
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="sticky top-0 z-40 flex items-center gap-x-6 bg-white px-4 py-4 shadow-sm sm:px-6 lg:hidden">
+      <button type="button" class="-m-2.5 p-2.5 text-gray-700 lg:hidden">
+        <span class="sr-only">Open sidebar</span>
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+      <div class="flex-1 text-sm font-semibold leading-6 text-gray-900">Button</div>
+    </div>
+
+    <main class="py-10 lg:pl-72">
+      <div class="px-4 sm:px-6 lg:px-8">
+
+        <!-- Content -->
+
+        <div class="container mx-auto max-w-5xl">
+          <h1 class="text-4xl font-bold">
+            Alert
+          </h1>
+          <p class="mt-4 text-slate-500">Alerts come in four roles: success, danger, warning, and info. They can be dismissible, and have a title, description, and action.</p>
+      
+          <h2 class="mt-8 text-xl">Success</h2>
+          <div class="my-4">
+
+            <div class="bg-green-50 p-4">
+              <div class="flex">
+                <div class="flex-shrink-0">
+                  <i class="fa fa-check-circle text-xl text-green-500"></i>
+                </div>
+                <div class="ml-3">
+                  <h3 class="text-sm font-medium text-green-800">Alert heading</h3>
+                  <div class="mt-2 text-sm text-green-700">
+                    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                  </div>
+                  <div class="mt-4">
+                    <div class="-mx-2 -my-1.5 flex">
+                      <button type="button" class="bg-green-50 px-2 py-1.5 text-sm font-medium text-green-800 hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2 focus:ring-offset-green-50">Button text</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Dismiss -->
+                <div class="ml-auto pl-3">
+                  <div class="-mx-1.5 -my-1.5">
+                    <button type="button" class="inline-flex bg-green-50 p-1.5 text-green-500 hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-1 focus:ring-offset-green-50">
+                      <span class="sr-only">Dismiss</span>
+                      <i class="far fa-times w-4"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+<pre><code class="language-html">&lt;div class=&quot;bg-green-50 p-4&quot;&gt;
+  &lt;div class=&quot;flex&quot;&gt;
+    &lt;div class=&quot;flex-shrink-0&quot;&gt;
+      &lt;i class=&quot;fa fa-check-circle text-xl text-green-500&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ml-3&quot;&gt;
+      &lt;h3 class=&quot;text-sm font-medium text-green-800&quot;&gt;Alert heading&lt;/h3&gt;
+      &lt;div class=&quot;mt-2 text-sm text-green-700&quot;&gt;
+        &lt;p&gt;Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;mt-4&quot;&gt;
+        &lt;div class=&quot;-mx-2 -my-1.5 flex&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;bg-green-50 px-2 py-1.5 text-sm font-medium text-green-800 hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2 focus:ring-offset-green-50&quot;&gt;Button text&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- Dismiss --&gt;
+    &lt;div class=&quot;ml-auto pl-3&quot;&gt;
+      &lt;div class=&quot;-mx-1.5 -my-1.5&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;inline-flex bg-green-50 p-1.5 text-green-500 hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-1 focus:ring-offset-green-50&quot;&gt;
+          &lt;span class=&quot;sr-only&quot;&gt;Dismiss&lt;/span&gt;
+          &lt;i class=&quot;far fa-times w-4&quot;&gt;&lt;/i&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h2 class="mt-8 text-xl">Danger</h2>
+<div class="my-4">
+
+  <div class="bg-red-50 p-4">
+    <div class="flex">
+      <div class="flex-shrink-0">
+        <i class="fa fa-times-circle text-xl text-red-500"></i>
+      </div>
+      <div class="ml-3">
+        <h3 class="text-sm font-medium text-red-800">Alert heading</h3>
+        <div class="mt-2 text-sm text-red-700">
+          <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+        </div>
+        <div class="mt-4">
+          <div class="-mx-2 -my-1.5 flex">
+            <button type="button" class="bg-red-50 px-2 py-1.5 text-sm font-medium text-red-800 hover:bg-red-100 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 focus:ring-offset-red-50">Button text</button>
+          </div>
+        </div>
+      </div>
+      <!-- Dismiss -->
+      <div class="ml-auto pl-3">
+        <div class="-mx-1.5 -my-1.5">
+          <button type="button" class="inline-flex bg-red-50 p-1.5 text-red-500 hover:bg-red-100 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-1 focus:ring-offset-red-50">
+            <span class="sr-only">Dismiss</span>
+            <i class="far fa-times w-4"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<pre><code class="language-html">&lt;div class=&quot;bg-red-50 p-4&quot;&gt;
+  &lt;div class=&quot;flex&quot;&gt;
+    &lt;div class=&quot;flex-shrink-0&quot;&gt;
+      &lt;i class=&quot;fa fa-times-circle text-xl text-red-500&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ml-3&quot;&gt;
+      &lt;h3 class=&quot;text-sm font-medium text-red-800&quot;&gt;Alert heading&lt;/h3&gt;
+      &lt;div class=&quot;mt-2 text-sm text-red-700&quot;&gt;
+        &lt;p&gt;Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;mt-4&quot;&gt;
+        &lt;div class=&quot;-mx-2 -my-1.5 flex&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;bg-red-50 px-2 py-1.5 text-sm font-medium text-red-800 hover:bg-red-100 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 focus:ring-offset-red-50&quot;&gt;Button text&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- Dismiss --&gt;
+    &lt;div class=&quot;ml-auto pl-3&quot;&gt;
+      &lt;div class=&quot;-mx-1.5 -my-1.5&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;inline-flex bg-red-50 p-1.5 text-red-500 hover:bg-red-100 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-1 focus:ring-offset-red-50&quot;&gt;
+          &lt;span class=&quot;sr-only&quot;&gt;Dismiss&lt;/span&gt;
+          &lt;i class=&quot;far fa-times w-4&quot;&gt;&lt;/i&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h2 class="mt-8 text-xl">Warning</h2>
+<div class="my-4">
+
+  <div class="bg-yellow-50 p-4">
+    <div class="flex">
+      <div class="flex-shrink-0">
+        <i class="fa fa-exclamation-triangle text-xl text-yellow-500"></i>
+      </div>
+      <div class="ml-3">
+        <h3 class="text-sm font-medium text-yellow-800">Alert heading</h3>
+        <div class="mt-2 text-sm text-yellow-700">
+          <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+        </div>
+        <div class="mt-4">
+          <div class="-mx-2 -my-1.5 flex">
+            <button type="button" class="bg-yellow-50 px-2 py-1.5 text-sm font-medium text-yellow-800 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">Button text</button>
+          </div>
+        </div>
+      </div>
+      <!-- Dismiss -->
+      <div class="ml-auto pl-3">
+        <div class="-mx-1.5 -my-1.5">
+          <button type="button" class="inline-flex bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-1 focus:ring-offset-yellow-50">
+            <span class="sr-only">Dismiss</span>
+            <i class="far fa-times w-4"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<pre><code class="language-html">&lt;div class=&quot;bg-yellow-50 p-4&quot;&gt;
+  &lt;div class=&quot;flex&quot;&gt;
+    &lt;div class=&quot;flex-shrink-0&quot;&gt;
+      &lt;i class=&quot;fa fa-exclamation-triangle text-xl text-yellow-500&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ml-3&quot;&gt;
+      &lt;h3 class=&quot;text-sm font-medium text-yellow-800&quot;&gt;Alert heading&lt;/h3&gt;
+      &lt;div class=&quot;mt-2 text-sm text-yellow-700&quot;&gt;
+        &lt;p&gt;Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;mt-4&quot;&gt;
+        &lt;div class=&quot;-mx-2 -my-1.5 flex&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;bg-yellow-50 px-2 py-1.5 text-sm font-medium text-yellow-800 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50&quot;&gt;Button text&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- Dismiss --&gt;
+    &lt;div class=&quot;ml-auto pl-3&quot;&gt;
+      &lt;div class=&quot;-mx-1.5 -my-1.5&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;inline-flex bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-1 focus:ring-offset-yellow-50&quot;&gt;
+          &lt;span class=&quot;sr-only&quot;&gt;Dismiss&lt;/span&gt;
+          &lt;i class=&quot;far fa-times w-4&quot;&gt;&lt;/i&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h2 class="mt-8 text-xl">Info</h2>
+<div class="my-4">
+
+  <div class="bg-blue-50 p-4">
+    <div class="flex">
+      <div class="flex-shrink-0">
+        <i class="fa fa-info-circle text-base text-blue-500"></i>
+      </div>
+      <div class="ml-3">
+        <h3 class="text-sm font-medium text-blue-800">Alert heading</h3>
+        <div class="mt-2 text-sm text-blue-700">
+          <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+        </div>
+        <div class="mt-4">
+          <div class="-mx-2 -my-1.5 flex">
+            <button type="button" class="bg-blue-50 px-2 py-1.5 text-sm font-medium text-blue-800 hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-blue-50">Button text</button>
+          </div>
+        </div>
+      </div>
+      <!-- Dismiss -->
+      <div class="ml-auto pl-3">
+        <div class="-mx-1.5 -my-1.5">
+          <button type="button" class="inline-flex bg-blue-50 p-1.5 text-blue-500 hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-1 focus:ring-offset-blue-50">
+            <span class="sr-only">Dismiss</span>
+            <i class="far fa-times w-4"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<pre><code class="language-html">&lt;div class=&quot;bg-blue-50 p-4&quot;&gt;
+  &lt;div class=&quot;flex&quot;&gt;
+    &lt;div class=&quot;flex-shrink-0&quot;&gt;
+      &lt;i class=&quot;fa fa-info-circle text-base text-blue-500&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ml-3&quot;&gt;
+      &lt;h3 class=&quot;text-sm font-medium text-blue-800&quot;&gt;Alert heading&lt;/h3&gt;
+      &lt;div class=&quot;mt-2 text-sm text-blue-700&quot;&gt;
+        &lt;p&gt;Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;mt-4&quot;&gt;
+        &lt;div class=&quot;-mx-2 -my-1.5 flex&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;bg-blue-50 px-2 py-1.5 text-sm font-medium text-blue-800 hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-blue-50&quot;&gt;Button text&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- Dismiss --&gt;
+    &lt;div class=&quot;ml-auto pl-3&quot;&gt;
+      &lt;div class=&quot;-mx-1.5 -my-1.5&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;inline-flex bg-blue-50 p-1.5 text-blue-500 hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-1 focus:ring-offset-blue-50&quot;&gt;
+          &lt;span class=&quot;sr-only&quot;&gt;Dismiss&lt;/span&gt;
+          &lt;i class=&quot;far fa-times w-4&quot;&gt;&lt;/i&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+          <h2 class="text-xl font-medium mt-8">Vue code</h2>
+          <p class="text-highEmphasis mt-4">For the Vue code, visit the <a href="https://tailwindui.com/components/application-ui/feedback/alerts" class="text-link hover:underline" target="_blank">Tailwind UI alerts page</a>.</p>
+
+        </div><!-- Ends container -->
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
