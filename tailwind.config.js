@@ -16,11 +16,14 @@ module.exports = {
         linkHover: '#1E429F', //blue-800
         linkActive: '#233876', //blue-900
         highEmphasis: '#1F2A37', //gray-800
+        mediumEmphasis: '#6b7280', //gray-500
+        focusRing: '#3b82f6', //blue-500
+        border: '#d1d5db', //gray-300
       },
     },
   },
   plugins: [
     require('flowbite/plugin'),
-    require('@tailwindcss/forms')
+    require('@tailwindcss/forms') // Used for input-text, tabs.
   ],
 }

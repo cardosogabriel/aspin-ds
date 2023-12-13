@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-white">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input Text</title>
+  <link href="dist/styles.css" rel="stylesheet">
+  <link href="dist/fontawesome/all.min.css" rel="stylesheet">
+  <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
+  <link href="dist/prism/prism.css" rel="stylesheet">
+  <script src="dist/prism/prism.js"></script>
+  <link rel="icon" type="image/png" href="https://demo.intersell.cloud/graphics/templates/aspin_demo/favicons/favicon-16x16.png">
+</head>
+<body class="h-full">
+
+  <div>
+    <!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. -->
+    <div class="relative z-50 lg:hidden" role="dialog" aria-modal="true">
+      <div class="fixed inset-0 bg-gray-900/80"></div>
+      <div class="fixed inset-0 flex">
+        <div class="relative mr-16 flex w-full max-w-xs flex-1">
+          <div class="absolute left-full top-0 flex w-16 justify-center pt-5">
+            <button type="button" class="-m-2.5 p-2.5">
+              <span class="sr-only">Close sidebar</span>
+              <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Sidebar component, swap this element with another sidebar if you like -->
+          <div class="flex grow flex-col gap-y-5 overflow-y-auto bg-white px-6 pb-2">
+            <div class="flex h-16 shrink-0 items-center">
+              <img class="h-8 w-auto" src="dist/img/aspin-logo.png" alt="Your Company">
+            </div>
+            <nav class="flex flex-1 flex-col">
+              <ul class="flex flex-1 flex-col gap-y-7">
+                <li>
+                  <div class="text-xs font-semibold leading-6 text-gray-400">Components</div>
+                  <ul class="-mx-2 mt-2 space-y-1">
+                    <li>
+                      <a href="button.html" class="bg-gray-50 text-link group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                        Input Text
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Static sidebar for desktop -->
+    <div class="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
+      <!-- Sidebar component, swap this element with another sidebar if you like -->
+      <div class="flex grow flex-col gap-y-5 overflow-y-auto border-r border-gray-200 bg-white px-6">
+        <div class="flex h-16 shrink-0 items-center">
+          <img class="h-8 w-auto" src="dist/img/aspin-logo.png" alt="Your Company">
+        </div>
+        <nav class="flex flex-1 flex-col">
+          <ul class="flex flex-1 flex-col gap-y-7">
+            <li>
+              <div class="text-xs font-semibold leading-6 text-gray-400">Components</div>
+              <ul class="-mx-2 mt-2 space-y-1">
+                <li>
+                  <!-- Current: "bg-gray-50 text-indigo-600", Default: "text-gray-700 hover:text-indigo-600 hover:bg-gray-50" -->
+                  <a href="button.html" class="bg-gray-50 text-link group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                    Input Text
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="sticky top-0 z-40 flex items-center gap-x-6 bg-white px-4 py-4 shadow-sm sm:px-6 lg:hidden">
+      <button type="button" class="-m-2.5 p-2.5 text-gray-700 lg:hidden">
+        <span class="sr-only">Open sidebar</span>
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+      <div class="flex-1 text-sm font-semibold leading-6 text-gray-900">Input Text</div>
+    </div>
+
+    <main class="py-10 lg:pl-72">
+      <div class="px-4 sm:px-6 lg:px-8">
+
+        <!-- Content -->
+
+        <div class="container mx-auto max-w-5xl">
+          <h1 class="text-4xl font-bold">
+            Input Text
+          </h1>
+          <p class="mt-4 text-slate-500">Input Text</p>
+      
+          <h2 class="mt-8 text-xl">Input</h2>
+          <div class="my-4">
+
+            <div>
+              <label for="text" class="block text-sm font-medium leading-6 text-gray-900">Input label</label>
+              <div class="mt-2">
+                <input type="text" name="text" id="text" class="block w-full border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-focusRing sm:text-sm sm:leading-6" placeholder="Placeholder">
+              </div>
+              <p class="mt-2 text-sm text-mediumEmphasis">Optional help text comes here.</p>
+            </div>
+
+          </div>
+<pre><code class="language-html">&lt;div&gt;
+  &lt;label for=&quot;text&quot; class=&quot;block text-sm font-medium leading-6 text-gray-900&quot;&gt;Input label&lt;/label&gt;
+  &lt;div class=&quot;mt-2&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;text&quot; id=&quot;text&quot; class=&quot;block w-full border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-focusRing sm:text-sm sm:leading-6&quot; placeholder=&quot;Placeholder&quot;&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;mt-2 text-sm text-mediumEmphasis&quot;&gt;Optional help text comes here.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+
+            <h2 class="mt-8 text-xl">Input Error</h2>
+            <div class="my-4">
+
+              <div>
+                <label for="text-error" class="block text-sm font-medium leading-6 text-gray-900">Input label</label>
+                <div class="relative mt-2">
+                  <input type="text" name="text-error" id="text-error" value="Input text" class="block w-full border-0 py-1.5 text-red-900 ring-1 ring-inset ring-red-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6" placeholder="Placeholder">
+                  <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
+                    <i class="fa fa-exclamation-circle text-red-500"></i>
+                  </div>  
+                </div>
+                <p class="mt-2 text-sm text-red-600">Error text comes here.</p>
+              </div>
+
+            </div>
+<pre><code class="language-html">&lt;div&gt;
+  &lt;label for=&quot;text-error&quot; class=&quot;block text-sm font-medium leading-6 text-gray-900&quot;&gt;Input label&lt;/label&gt;
+  &lt;div class=&quot;relative mt-2&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;text-error&quot; id=&quot;text-error&quot; class=&quot;block w-full border-0 py-1.5 text-red-900 ring-1 ring-inset ring-red-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6&quot; placeholder=&quot;Placeholder&quot;&gt;
+    &lt;div class=&quot;pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3&quot;&gt;
+      &lt;i class=&quot;fa fa-exclamation-circle text-red-500&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;  
+  &lt;/div&gt;
+  &lt;p class=&quot;mt-2 text-sm text-red-600&quot;&gt;Error text comes here.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+
+            <h2 class="mt-8 text-xl">Input Disabled</h2>
+            <div class="my-4">
+
+              <div>
+                <label for="text-disabled" class="block text-sm font-medium leading-6 text-gray-900">Input label</label>
+                <div class="mt-2">
+                  <input type="text" name="text-disabled" id="text-disabled" value="Input text" disabled class="block w-full border-0 py-1.5 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 disabled:cursor-not-allowed disabled:bg-gray-50 disabled:text-mediumEmphasis disabled:ring-gray-200 sm:text-sm sm:leading-6" placeholder="Placeholder">
+                </div>
+              </div>
+  
+            </div>
+<pre><code class="language-html">&lt;div&gt;
+  &lt;label for=&quot;text-error&quot; class=&quot;block text-sm font-medium leading-6 text-gray-900&quot;&gt;Input label&lt;/label&gt;
+  &lt;div class=&quot;relative mt-2&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;text-error&quot; id=&quot;text-error&quot; class=&quot;block w-full border-0 py-1.5 text-red-900 ring-1 ring-inset ring-red-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6&quot; placeholder=&quot;Placeholder&quot;&gt;
+    &lt;div class=&quot;pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3&quot;&gt;
+      &lt;i class=&quot;fa fa-exclamation-circle text-red-500&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;  
+  &lt;/div&gt;
+  &lt;p class=&quot;mt-2 text-sm text-red-600&quot;&gt;Error text comes here.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+
+
+          <h2 class="text-xl font-medium mt-8">Vue code</h2>
+          <p class="text-highEmphasis mt-4">For the Vue code, visit the <a href="https://tailwindui.com/components/application-ui/forms/input-groups" class="text-link hover:underline" target="_blank">Tailwind input groups page</a>.</p>
+
+        </div><!-- Ends container -->
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
