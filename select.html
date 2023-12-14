@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-white">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select</title>
+  <link href="dist/styles.css" rel="stylesheet">
+  <link href="dist/fontawesome/all.min.css" rel="stylesheet">
+  <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
+  <link href="dist/prism/prism.css" rel="stylesheet">
+  <script src="dist/prism/prism.js"></script>
+  <link rel="icon" type="image/png" href="https://demo.intersell.cloud/graphics/templates/aspin_demo/favicons/favicon-16x16.png">
+</head>
+<body class="h-full">
+
+  <div>
+    <!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. -->
+    <div class="relative z-50 lg:hidden" role="dialog" aria-modal="true">
+      <div class="fixed inset-0 bg-gray-900/80"></div>
+      <div class="fixed inset-0 flex">
+        <div class="relative mr-16 flex w-full max-w-xs flex-1">
+          <div class="absolute left-full top-0 flex w-16 justify-center pt-5">
+            <button type="button" class="-m-2.5 p-2.5">
+              <span class="sr-only">Close sidebar</span>
+              <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Sidebar component, swap this element with another sidebar if you like -->
+          <div class="flex grow flex-col gap-y-5 overflow-y-auto bg-white px-6 pb-2">
+            <div class="flex h-16 shrink-0 items-center">
+              <img class="h-8 w-auto" src="dist/img/aspin-logo.png" alt="Your Company">
+            </div>
+            <nav class="flex flex-1 flex-col">
+              <ul class="flex flex-1 flex-col gap-y-7">
+                <li>
+                  <div class="text-xs font-semibold leading-6 text-gray-400">Components</div>
+                  <ul class="-mx-2 mt-2 space-y-1">
+                    <li>
+                      <a href="button.html" class="bg-gray-50 text-link group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                        Select
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Static sidebar for desktop -->
+    <div class="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
+      <!-- Sidebar component, swap this element with another sidebar if you like -->
+      <div class="flex grow flex-col gap-y-5 overflow-y-auto border-r border-gray-200 bg-white px-6">
+        <div class="flex h-16 shrink-0 items-center">
+          <img class="h-8 w-auto" src="dist/img/aspin-logo.png" alt="Your Company">
+        </div>
+        <nav class="flex flex-1 flex-col">
+          <ul class="flex flex-1 flex-col gap-y-7">
+            <li>
+              <div class="text-xs font-semibold leading-6 text-gray-400">Components</div>
+              <ul class="-mx-2 mt-2 space-y-1">
+                <li>
+                  <!-- Current: "bg-gray-50 text-indigo-600", Default: "text-gray-700 hover:text-indigo-600 hover:bg-gray-50" -->
+                  <a href="button.html" class="bg-gray-50 text-link group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                    Select
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="sticky top-0 z-40 flex items-center gap-x-6 bg-white px-4 py-4 shadow-sm sm:px-6 lg:hidden">
+      <button type="button" class="-m-2.5 p-2.5 text-gray-700 lg:hidden">
+        <span class="sr-only">Open sidebar</span>
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+      <div class="flex-1 text-sm font-semibold leading-6 text-highEmphasis">Select</div>
+    </div>
+
+    <main class="py-10 lg:pl-72">
+      <div class="px-4 sm:px-6 lg:px-8">
+
+        <!-- Content -->
+
+        <div class="container mx-auto max-w-5xl">
+          <h1 class="text-4xl font-bold">
+            Select
+          </h1>
+          <p class="mt-4 text-mediumEmphasis">Buttons are divided into button and button icon. Each comes in three sizes, two styles, and four states. Buttons also can have a trailing icon.</p>
+      
+          <h2 class="mt-8 text-xl">Select</h2>
+          <div class="my-4">
+
+            <div>
+              <label id="listbox-label" class="block text-sm font-medium leading-6 text-highEmphasis">Select label</label>
+              <div class="relative mt-2">
+                <button type="button" class="relative w-full cursor-default bg-white py-1.5 pl-3 pr-10 text-left text-highEmphasis ring-1 ring-inset ring-border focus:outline-none focus:ring-2 focus:ring-focusRing sm:text-sm sm:leading-6" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label">
+                  <span class="block truncate">First Option</span>
+                  <span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
+                    <i class="far fa-chevron-down text-mediumEmphasis inset-y-0 right-0 flex items-center"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+            
+          </div>
+<pre><code class="language-html">&lt;div&gt;
+  &lt;label id=&quot;listbox-label&quot; class=&quot;block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Select label&lt;/label&gt;
+  &lt;div class=&quot;relative mt-2&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;relative w-full cursor-default bg-white py-1.5 pl-3 pr-10 text-left text-highEmphasis ring-1 ring-inset ring-border focus:outline-none focus:ring-2 focus:ring-focusRing sm:text-sm sm:leading-6&quot; aria-haspopup=&quot;listbox&quot; aria-expanded=&quot;true&quot; aria-labelledby=&quot;listbox-label&quot;&gt;
+      &lt;span class=&quot;block truncate&quot;&gt;First Option&lt;/span&gt;
+      &lt;span class=&quot;pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3&quot;&gt;
+        &lt;i class=&quot;far fa-chevron-down text-mediumEmphasis inset-y-0 right-0 flex items-center&quot;&gt;&lt;/i&gt;
+      &lt;/span&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h2 class="mt-8 text-xl">Select Open</h2>
+<div class="my-4 mb-44">
+
+  <div>
+    <label id="listbox-label2" class="block text-sm font-medium leading-6 text-highEmphasis">Select label</label>
+    <div class="relative mt-2">
+      <button type="button" class="relative w-full cursor-default bg-white py-1.5 pl-3 pr-10 text-left text-highEmphasis  ring-1 ring-inset ring-border focus:outline-none focus:ring-2 focus:ring-focusRing sm:text-sm sm:leading-6"   aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label">
+        <span class="block truncate">First Option</span>
+        <span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
+          <i class="far fa-chevron-down text-mediumEmphasis inset-y-0 right-0 flex items-center"></i>
+        </span>
+      </button>
+      <ul class="absolute z-10 mt-1 max-h-60 w-full overflow-auto bg-white py-1 text-base shadow-md ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm" tabindex="-1" role="listbox" aria-labelledby="listbox-label" aria-activedescendant="listbox-option-3">
+        <li class="bg-link text-white relative cursor-default select-none py-2 pl-3 pr-9" id="listbox-option-1" role="option">
+          <span class="font-semibold block truncate">First option</span>
+          <span class="text-white absolute inset-y-0 right-0 flex items-center pr-4">
+            <i class="far fa-check"></i>
+          </span>
+        </li>
+        <li class="text-highEmphasis relative cursor-default select-none py-2 pl-3 pr-9 hover:bg-link hover:text-white" id="listbox-option-2" role="option">
+          <span class="font-normal block truncate">Second option</span>
+        </li>
+        <li class="text-highEmphasis relative cursor-default select-none py-2 pl-3 pr-9 hover:bg-link hover:text-white" id="listbox-option-3" role="option">
+          <span class="font-normal block truncate">Third option</span>
+        </li>
+        <li class="text-highEmphasis relative cursor-default select-none py-2 pl-3 pr-9 hover:bg-link hover:text-white" id="listbox-option-4" role="option">
+          <span class="font-normal block truncate">Fourth option</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+</div>
+<pre><code class="language-html">&lt;div&gt;
+  &lt;label id=&quot;listbox-label2&quot; class=&quot;block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Select label&lt;/label&gt;
+  &lt;div class=&quot;relative mt-2&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;relative w-full cursor-default bg-white py-1.5 pl-3 pr-10 text-left text-highEmphasis  ring-1 ring-inset ring-border focus:outline-none focus:ring-2 focus:ring-focusRing sm:text-sm sm:leading-6&quot;   aria-haspopup=&quot;listbox&quot; aria-expanded=&quot;true&quot; aria-labelledby=&quot;listbox-label&quot;&gt;
+      &lt;span class=&quot;block truncate&quot;&gt;First Option&lt;/span&gt;
+      &lt;span class=&quot;pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3&quot;&gt;
+        &lt;i class=&quot;far fa-chevron-down text-mediumEmphasis inset-y-0 right-0 flex items-center&quot;&gt;&lt;/i&gt;
+      &lt;/span&gt;
+    &lt;/button&gt;
+    &lt;ul class=&quot;absolute z-10 mt-1 max-h-60 w-full overflow-auto bg-white py-1 text-base shadow-md ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm&quot; tabindex=&quot;-1&quot; role=&quot;listbox&quot; aria-labelledby=&quot;listbox-label&quot; aria-activedescendant=&quot;listbox-option-3&quot;&gt;
+      &lt;li class=&quot;bg-link text-white relative cursor-default select-none py-2 pl-3 pr-9&quot; id=&quot;listbox-option-1&quot; role=&quot;option&quot;&gt;
+        &lt;span class=&quot;font-semibold block truncate&quot;&gt;First option&lt;/span&gt;
+        &lt;span class=&quot;text-white absolute inset-y-0 right-0 flex items-center pr-4&quot;&gt;
+          &lt;i class=&quot;far fa-check&quot;&gt;&lt;/i&gt;
+        &lt;/span&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;text-highEmphasis relative cursor-default select-none py-2 pl-3 pr-9 hover:bg-link hover:text-white&quot; id=&quot;listbox-option-2&quot; role=&quot;option&quot;&gt;
+        &lt;span class=&quot;font-normal block truncate&quot;&gt;Second option&lt;/span&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;text-highEmphasis relative cursor-default select-none py-2 pl-3 pr-9 hover:bg-link hover:text-white&quot; id=&quot;listbox-option-3&quot; role=&quot;option&quot;&gt;
+        &lt;span class=&quot;font-normal block truncate&quot;&gt;Third option&lt;/span&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;text-highEmphasis relative cursor-default select-none py-2 pl-3 pr-9 hover:bg-link hover:text-white&quot; id=&quot;listbox-option-4&quot; role=&quot;option&quot;&gt;
+        &lt;span class=&quot;font-normal block truncate&quot;&gt;Fourth option&lt;/span&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+            <h2 class="mt-8 text-xl">Select Error</h2>
+            <div class="my-4">
+
+              <div>
+                <label id="listbox-label3" class="block text-sm font-medium leading-6 text-highEmphasis">Select label</label>
+                <div class="relative mt-2">
+                  <button type="button" class="relative w-full cursor-default bg-white py-1.5 pl-3 pr-10 text-left text-red-900 ring-1 ring-inset ring-red-500 focus:outline-none focus:ring-2 focus:ring-red-500 sm:text-sm sm:leading-6" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label">
+                    <span class="block truncate">&nbsp;</span>
+                    <span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
+                      <i class="far fa-chevron-down text-red-500 inset-y-0 right-0 flex items-center"></i>
+                    </span>
+                  </button>
+                </div>
+                <p class="mt-2 text-sm text-red-600">Error text comes here.</p>
+              </div>
+              
+            </div>
+<pre><code class="language-html">&lt;div&gt;
+  &lt;label id=&quot;listbox-label3&quot; class=&quot;block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Select label&lt;/label&gt;
+  &lt;div class=&quot;relative mt-2&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;relative w-full cursor-default bg-white py-1.5 pl-3 pr-10 text-left text-red-900 ring-1 ring-inset ring-red-500 focus:outline-none focus:ring-2 focus:ring-red-500 sm:text-sm sm:leading-6&quot; aria-haspopup=&quot;listbox&quot; aria-expanded=&quot;true&quot; aria-labelledby=&quot;listbox-label&quot;&gt;
+      &lt;span class=&quot;block truncate&quot;&gt;&nbsp;&lt;/span&gt;
+      &lt;span class=&quot;pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3&quot;&gt;
+        &lt;i class=&quot;far fa-chevron-down text-red-500 inset-y-0 right-0 flex items-center&quot;&gt;&lt;/i&gt;
+      &lt;/span&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;mt-2 text-sm text-red-600&quot;&gt;Error text comes here.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+
+          <h2 class="text-xl font-medium mt-8">Vue code</h2>
+          <p class="text-highEmphasis mt-4">For the Vue code, visit the <a href="https://tailwindui.com/components/application-ui/forms/select-menus" class="text-link hover:underline" target="_blank">Tailwind UI select menus page</a>.</p>
+
+        </div><!-- Ends container -->
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>

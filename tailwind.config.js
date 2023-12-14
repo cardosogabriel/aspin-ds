@@ -24,6 +24,6 @@ module.exports = {
   },
   plugins: [
     require('flowbite/plugin'),
-    require('@tailwindcss/forms') // Used for input-text, tabs.
+    require('@tailwindcss/forms') // Used for input-text, select, tabs, textarea.
   ],
 }
