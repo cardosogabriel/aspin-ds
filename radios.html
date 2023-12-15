@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-white">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radios</title>
+  <link href="dist/styles.css" rel="stylesheet">
+  <link href="dist/fontawesome/all.min.css" rel="stylesheet">
+  <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
+  <link href="dist/prism/prism.css" rel="stylesheet">
+  <script src="dist/prism/prism.js"></script>
+  <link rel="icon" type="image/png" href="https://demo.intersell.cloud/graphics/templates/aspin_demo/favicons/favicon-16x16.png">
+</head>
+<body class="h-full">
+
+  <div>
+    <!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. -->
+    <div id="menu" class="relative z-50 lg:hidden hidden" role="dialog" aria-modal="true">
+      <div class="fixed inset-0 bg-gray-900/80"></div>
+      <div class="fixed inset-0 flex">
+        <div class="relative mr-16 flex w-full max-w-xs flex-1">
+          <div class="absolute left-full top-0 flex w-16 justify-center pt-5">
+            <button id="close-button" type="button" class="-m-2.5 p-2.5">
+              <span class="sr-only">Close sidebar</span>
+              <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Sidebar component, swap this element with another sidebar if you like -->
+          <div class="flex grow flex-col gap-y-5 overflow-y-auto bg-white px-6 pb-2">
+            <div class="flex h-16 shrink-0 items-center">
+              <img class="h-8 w-auto" src="dist/img/aspin-logo.png" alt="Your Company">
+            </div>
+            <nav class="flex flex-1 flex-col">
+              <ul class="flex flex-1 flex-col gap-y-7">
+                <li>
+                  <div class="text-xs font-semibold leading-6 text-gray-400">Components</div>
+                  <ul class="-mx-2 mt-2 space-y-1">
+                    <li>
+                      <a href="alert.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                        Alert
+                      </a>
+                    </li>
+                    <li>
+                      <a href="button.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                        Button
+                      </a>
+                    </li>
+                    <li>
+                      <a href="input-text.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                        Input Text
+                      </a>
+                    </li>
+                    <li>
+                      <a href="radios.html" class="bg-gray-50 text-link group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                        Radios
+                      </a>
+                    </li>
+                    <li>
+                      <a href="select.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                        Select
+                      </a>
+                    </li>
+                    <li>
+                      <a href="tabs.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                        Tabs
+                      </a>
+                    </li>
+                    <li>
+                      <a href="textarea.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                        Textarea
+                      </a>
+                    </li>
+                      </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Static sidebar for desktop -->
+    <div class="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
+      <!-- Sidebar component, swap this element with another sidebar if you like -->
+      <div class="flex grow flex-col gap-y-5 overflow-y-auto border-r border-gray-200 bg-white px-6">
+        <div class="flex h-16 shrink-0 items-center">
+          <img class="h-8 w-auto" src="dist/img/aspin-logo.png" alt="Your Company">
+        </div>
+        <nav class="flex flex-1 flex-col">
+          <ul class="flex flex-1 flex-col gap-y-7">
+            <li>
+              <div class="text-xs font-semibold leading-6 text-gray-400">Components</div>
+              <ul class="-mx-2 mt-2 space-y-1">
+                <li>
+                  <a href="alert.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                    Alert
+                  </a>
+                </li>
+                <li>
+                  <a href="button.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                    Button
+                  </a>
+                </li>
+                <li>
+                  <a href="input-text.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                    Input Text
+                  </a>
+                </li>
+                <li>
+                  <a href="radios.html" class="bg-gray-50 text-link group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                    Radios
+                  </a>
+                </li>
+                <li>
+                  <a href="select.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                    Select
+                  </a>
+                </li>                <li>
+                  <a href="tabs.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                    Tabs
+                  </a>
+                </li>
+                <li>
+                  <a href="textarea.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                    Textarea
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="sticky top-0 z-40 flex items-center gap-x-6 bg-white px-4 py-4 shadow-sm sm:px-6 lg:hidden">
+      <button id="hamburger" type="button" class="-m-2.5 p-2.5 text-gray-700 lg:hidden">
+        <span class="sr-only">Open sidebar</span>
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </div>
+
+    <main class="py-10 lg:pl-72">
+      <div class="px-4 sm:px-6 lg:px-8">
+
+        <!-- Content -->
+
+        <div class="container mx-auto max-w-5xl">
+          <h1 class="text-4xl font-bold">
+            Radios
+          </h1>
+          <p class="mt-4 text-slate-500">Radios come in four states: initial, checked, focused, and disabled.</p>
+      
+          <h2 class="mt-8 text-xl">List</h2>
+          <div class="my-4">
+
+            <div>
+              <label class="text-base font-semibold text-highEmphasis">Notifications</label>
+              <p class="text-sm text-mediumEmphasis">How do you prefer to receive notifications?</p>
+              <fieldset class="mt-4">
+                <legend class="sr-only">Notification method</legend>
+                <div class="space-y-4">
+                  <div class="flex items-center">
+                    <input id="email" name="notification-method" type="radio" checked class="h-4 w-4 border-border text-link focus:ring-link">
+                    <label for="email" class="ml-3 block text-sm font-medium leading-6 text-highEmphasis">Email</label>
+                  </div>
+                  <div class="flex items-center">
+                    <input id="sms" name="notification-method" type="radio" checked class="h-4 w-4 border-border text-link focus:ring-link">
+                    <label for="sms" class="ml-3 block text-sm font-medium leading-6 text-highEmphasis">Phone (SMS)</label>
+                  </div>
+                  <div class="flex items-center">
+                    <input id="push" name="notification-method" type="radio" checked class="h-4 w-4 border-border text-link focus:ring-link">
+                    <label for="push" class="ml-3 block text-sm font-medium leading-6 text-highEmphasis">Push notification</label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+
+          </div>
+<pre><code class="language-html">&lt;div&gt;
+  &lt;label class=&quot;text-base font-semibold text-highEmphasis&quot;&gt;Notifications&lt;/label&gt;
+  &lt;p class=&quot;text-sm text-mediumEmphasis&quot;&gt;How do you prefer to receive notifications?&lt;/p&gt;
+  &lt;fieldset class=&quot;mt-4&quot;&gt;
+    &lt;legend class=&quot;sr-only&quot;&gt;Notification method&lt;/legend&gt;
+    &lt;div class=&quot;space-y-4&quot;&gt;
+      &lt;div class=&quot;flex items-center&quot;&gt;
+        &lt;input id=&quot;email&quot; name=&quot;notification-method&quot; type=&quot;radio&quot; checked class=&quot;h-4 w-4 border-border text-link focus:ring-link&quot;&gt;
+        &lt;label for=&quot;email&quot; class=&quot;ml-3 block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Email&lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex items-center&quot;&gt;
+        &lt;input id=&quot;sms&quot; name=&quot;notification-method&quot; type=&quot;radio&quot; checked class=&quot;h-4 w-4 border-border text-link focus:ring-link&quot;&gt;
+        &lt;label for=&quot;sms&quot; class=&quot;ml-3 block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Phone (SMS)&lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex items-center&quot;&gt;
+        &lt;input id=&quot;push&quot; name=&quot;notification-method&quot; type=&quot;radio&quot; checked class=&quot;h-4 w-4 border-border text-link focus:ring-link&quot;&gt;
+        &lt;label for=&quot;push&quot; class=&quot;ml-3 block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Push notification&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+&lt;/div&gt;
+</code></pre>
+
+            <h2 class="mt-8 text-xl">List inline</h2>
+            <div class="my-4">
+
+              <div>
+                <label class="text-base font-semibold text-highEmphasis">Notifications</label>
+                <p class="text-sm text-mediumEmphasis">How do you prefer to receive notifications?</p>
+                <fieldset class="mt-4">
+                  <legend class="sr-only">Notification method</legend>
+                  <div class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
+                    <div class="flex items-center">
+                      <input id="email2" name="notification-method" type="radio" checked class="h-4 w-4 border-border text-link focus:ring-link">
+                      <label for="email2" class="ml-3 block text-sm font-medium leading-6 text-highEmphasis">Email</label>
+                    </div>
+                    <div class="flex items-center">
+                      <input id="sms2" name="notification-method" type="radio" checked class="h-4 w-4 border-border text-link focus:ring-link">
+                      <label for="sms2" class="ml-3 block text-sm font-medium leading-6 text-highEmphasis">Phone (SMS)</label>
+                    </div>
+                    <div class="flex items-center">
+                      <input id="push2" name="notification-method" type="radio" checked class="h-4 w-4 border-border text-link focus:ring-link">
+                      <label for="push2" class="ml-3 block text-sm font-medium leading-6 text-highEmphasis">Push notification</label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+
+            </div>
+<pre><code class="language-html">&lt;div&gt;
+  &lt;label class=&quot;text-base font-semibold text-highEmphasis&quot;&gt;Notifications&lt;/label&gt;
+  &lt;p class=&quot;text-sm text-mediumEmphasis&quot;&gt;How do you prefer to receive notifications?&lt;/p&gt;
+  &lt;fieldset class=&quot;mt-4&quot;&gt;
+    &lt;legend class=&quot;sr-only&quot;&gt;Notification method&lt;/legend&gt;
+    &lt;div class=&quot;space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0&quot;&gt;
+      &lt;div class=&quot;flex items-center&quot;&gt;
+        &lt;input id=&quot;email2&quot; name=&quot;notification-method&quot; type=&quot;radio&quot; checked class=&quot;h-4 w-4 border-border text-link focus:ring-link&quot;&gt;
+        &lt;label for=&quot;email2&quot; class=&quot;ml-3 block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Email&lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex items-center&quot;&gt;
+        &lt;input id=&quot;sms2&quot; name=&quot;notification-method&quot; type=&quot;radio&quot; checked class=&quot;h-4 w-4 border-border text-link focus:ring-link&quot;&gt;
+        &lt;label for=&quot;sms2&quot; class=&quot;ml-3 block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Phone (SMS)&lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex items-center&quot;&gt;
+        &lt;input id=&quot;push2&quot; name=&quot;notification-method&quot; type=&quot;radio&quot; checked class=&quot;h-4 w-4 border-border text-link focus:ring-link&quot;&gt;
+        &lt;label for=&quot;push2&quot; class=&quot;ml-3 block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Push notification&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+&lt;/div&gt;
+</code></pre>
+
+          <h2 class="text-xl font-medium mt-8">Vue code</h2>
+          <p class="text-highEmphasis mt-4">For the Vue code, visit the <a href="https://tailwindui.com/components/application-ui/forms/radio-groups" class="text-link hover:underline" target="_blank">Tailwind UI radio groups page</a>.</p>
+
+        </div><!-- Ends container -->
+      </div>
+    </main>
+  </div>
+
+  <script src="dist/nav.js"></script>
+</body>
+</html>
