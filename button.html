@@ -15,7 +15,7 @@
 
   <div>
     <!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. -->
-    <div id="menu" class="relative z-50 lg:hidden" role="dialog" aria-modal="true">
+    <div id="menu" class="relative z-50 lg:hidden hidden" role="dialog" aria-modal="true">
       <div class="fixed inset-0 bg-gray-900/80"></div>
       <div class="fixed inset-0 flex">
         <div class="relative mr-16 flex w-full max-w-xs flex-1">
@@ -39,11 +39,36 @@
                   <div class="text-xs font-semibold leading-6 text-gray-400">Components</div>
                   <ul class="-mx-2 mt-2 space-y-1">
                     <li>
+                      <a href="alert.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                        Alert
+                      </a>
+                    </li>
+                    <li>
                       <a href="button.html" class="bg-gray-50 text-link group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                         Button
                       </a>
                     </li>
-                  </ul>
+                    <li>
+                      <a href="input-text.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                        Input Text
+                      </a>
+                    </li>
+                    <li>
+                      <a href="select.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                        Select
+                      </a>
+                    </li>
+                    <li>
+                      <a href="tabs.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                        Tabs
+                      </a>
+                    </li>
+                    <li>
+                      <a href="textarea.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                        Textarea
+                      </a>
+                    </li>
+                      </ul>
                 </li>
               </ul>
             </nav>
@@ -102,7 +127,7 @@
     </div>
 
     <div class="sticky top-0 z-40 flex items-center gap-x-6 bg-white px-4 py-4 shadow-sm sm:px-6 lg:hidden">
-      <button type="button" class="-m-2.5 p-2.5 text-gray-700 lg:hidden">
+      <button id="hamburger" type="button" class="-m-2.5 p-2.5 text-gray-700 lg:hidden">
         <span class="sr-only">Open sidebar</span>
         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -180,6 +205,7 @@
       </div>
     </main>
   </div>
+  <script src="dist/nav.js"></script>
 
 </body>
 </html>
