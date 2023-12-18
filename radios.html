@@ -49,6 +49,11 @@
                       </a>
                     </li>
                     <li>
+                      <a href="checkboxes.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                        Checkboxes
+                      </a>
+                    </li>
+                    <li>
                       <a href="input-text.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                         Input Text
                       </a>
@@ -73,7 +78,12 @@
                         Textarea
                       </a>
                     </li>
-                      </ul>
+                    <li>
+                      <a href="toggle.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                        Toggle
+                      </a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </nav>
@@ -105,6 +115,11 @@
                   </a>
                 </li>
                 <li>
+                  <a href="checkboxes.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                    Checkboxes
+                  </a>
+                </li>
+                <li>
                   <a href="input-text.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                     Input Text
                   </a>
@@ -118,7 +133,8 @@
                   <a href="select.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                     Select
                   </a>
-                </li>                <li>
+                </li>                
+                <li>
                   <a href="tabs.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                     Tabs
                   </a>
@@ -126,6 +142,11 @@
                 <li>
                   <a href="textarea.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                     Textarea
+                  </a>
+                </li>
+                <li>
+                  <a href="toggle.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                    Toggle
                   </a>
                 </li>
               </ul>
@@ -156,7 +177,7 @@
           <p class="mt-4 text-slate-500">Radios come in four states: initial, checked, focused, and disabled.</p>
       
           <h2 class="mt-8 text-xl">List</h2>
-          <div class="my-4">
+          <div class="my-8">
 
             <div>
               <label class="text-base font-semibold text-highEmphasis">Notifications</label>
@@ -169,11 +190,11 @@
                     <label for="email" class="ml-3 block text-sm font-medium leading-6 text-highEmphasis">Email</label>
                   </div>
                   <div class="flex items-center">
-                    <input id="sms" name="notification-method" type="radio" checked class="h-4 w-4 border-border text-link focus:ring-link">
+                    <input id="sms" name="notification-method" type="radio" class="h-4 w-4 border-border text-link focus:ring-link">
                     <label for="sms" class="ml-3 block text-sm font-medium leading-6 text-highEmphasis">Phone (SMS)</label>
                   </div>
                   <div class="flex items-center">
-                    <input id="push" name="notification-method" type="radio" checked class="h-4 w-4 border-border text-link focus:ring-link">
+                    <input id="push" name="notification-method" type="radio" class="h-4 w-4 border-border text-link focus:ring-link">
                     <label for="push" class="ml-3 block text-sm font-medium leading-6 text-highEmphasis">Push notification</label>
                   </div>
                 </div>
@@ -192,20 +213,21 @@
         &lt;label for=&quot;email&quot; class=&quot;ml-3 block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Email&lt;/label&gt;
       &lt;/div&gt;
       &lt;div class=&quot;flex items-center&quot;&gt;
-        &lt;input id=&quot;sms&quot; name=&quot;notification-method&quot; type=&quot;radio&quot; checked class=&quot;h-4 w-4 border-border text-link focus:ring-link&quot;&gt;
+        &lt;input id=&quot;sms&quot; name=&quot;notification-method&quot; type=&quot;radio&quot; class=&quot;h-4 w-4 border-border text-link focus:ring-link&quot;&gt;
         &lt;label for=&quot;sms&quot; class=&quot;ml-3 block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Phone (SMS)&lt;/label&gt;
       &lt;/div&gt;
       &lt;div class=&quot;flex items-center&quot;&gt;
-        &lt;input id=&quot;push&quot; name=&quot;notification-method&quot; type=&quot;radio&quot; checked class=&quot;h-4 w-4 border-border text-link focus:ring-link&quot;&gt;
+        &lt;input id=&quot;push&quot; name=&quot;notification-method&quot; type=&quot;radio&quot; class=&quot;h-4 w-4 border-border text-link focus:ring-link&quot;&gt;
         &lt;label for=&quot;push&quot; class=&quot;ml-3 block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Push notification&lt;/label&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/fieldset&gt;
 &lt;/div&gt;
+
 </code></pre>
 
             <h2 class="mt-8 text-xl">List inline</h2>
-            <div class="my-4">
+            <div class="my-8">
 
               <div>
                 <label class="text-base font-semibold text-highEmphasis">Notifications</label>
@@ -214,15 +236,15 @@
                   <legend class="sr-only">Notification method</legend>
                   <div class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
                     <div class="flex items-center">
-                      <input id="email2" name="notification-method" type="radio" checked class="h-4 w-4 border-border text-link focus:ring-link">
+                      <input id="email2" name="notification-method2" type="radio" checked class="h-4 w-4 border-border text-link focus:ring-link">
                       <label for="email2" class="ml-3 block text-sm font-medium leading-6 text-highEmphasis">Email</label>
                     </div>
                     <div class="flex items-center">
-                      <input id="sms2" name="notification-method" type="radio" checked class="h-4 w-4 border-border text-link focus:ring-link">
+                      <input id="sms2" name="notification-method2" type="radio" class="h-4 w-4 border-border text-link focus:ring-link">
                       <label for="sms2" class="ml-3 block text-sm font-medium leading-6 text-highEmphasis">Phone (SMS)</label>
                     </div>
                     <div class="flex items-center">
-                      <input id="push2" name="notification-method" type="radio" checked class="h-4 w-4 border-border text-link focus:ring-link">
+                      <input id="push2" name="notification-method2" type="radio" class="h-4 w-4 border-border text-link focus:ring-link">
                       <label for="push2" class="ml-3 block text-sm font-medium leading-6 text-highEmphasis">Push notification</label>
                     </div>
                   </div>
@@ -237,15 +259,15 @@
     &lt;legend class=&quot;sr-only&quot;&gt;Notification method&lt;/legend&gt;
     &lt;div class=&quot;space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0&quot;&gt;
       &lt;div class=&quot;flex items-center&quot;&gt;
-        &lt;input id=&quot;email2&quot; name=&quot;notification-method&quot; type=&quot;radio&quot; checked class=&quot;h-4 w-4 border-border text-link focus:ring-link&quot;&gt;
+        &lt;input id=&quot;email2&quot; name=&quot;notification-method2&quot; type=&quot;radio&quot; checked class=&quot;h-4 w-4 border-border text-link focus:ring-link&quot;&gt;
         &lt;label for=&quot;email2&quot; class=&quot;ml-3 block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Email&lt;/label&gt;
       &lt;/div&gt;
       &lt;div class=&quot;flex items-center&quot;&gt;
-        &lt;input id=&quot;sms2&quot; name=&quot;notification-method&quot; type=&quot;radio&quot; checked class=&quot;h-4 w-4 border-border text-link focus:ring-link&quot;&gt;
+        &lt;input id=&quot;sms2&quot; name=&quot;notification-method2&quot; type=&quot;radio&quot; class=&quot;h-4 w-4 border-border text-link focus:ring-link&quot;&gt;
         &lt;label for=&quot;sms2&quot; class=&quot;ml-3 block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Phone (SMS)&lt;/label&gt;
       &lt;/div&gt;
       &lt;div class=&quot;flex items-center&quot;&gt;
-        &lt;input id=&quot;push2&quot; name=&quot;notification-method&quot; type=&quot;radio&quot; checked class=&quot;h-4 w-4 border-border text-link focus:ring-link&quot;&gt;
+        &lt;input id=&quot;push2&quot; name=&quot;notification-method2&quot; type=&quot;radio&quot; class=&quot;h-4 w-4 border-border text-link focus:ring-link&quot;&gt;
         &lt;label for=&quot;push2&quot; class=&quot;ml-3 block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Push notification&lt;/label&gt;
       &lt;/div&gt;
     &lt;/div&gt;

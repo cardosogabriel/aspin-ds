@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Textarea</title>
+  <title>Toggle</title>
   <link href="dist/styles.css" rel="stylesheet">
   <link href="dist/fontawesome/all.min.css" rel="stylesheet">
   <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
@@ -78,11 +78,6 @@
                         Textarea
                       </a>
                     </li>
-                    <li>
-                      <a href="toggle.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
-                        Toggle
-                      </a>
-                    </li>
                   </ul>
                 </li>
               </ul>
@@ -128,7 +123,7 @@
                   <a href="radios.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                     Radios
                   </a>
-                </li>
+                </li>    
                 <li>
                   <a href="select.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                     Select
@@ -140,12 +135,12 @@
                   </a>
                 </li>
                 <li>
-                  <a href="textarea.html" class="bg-gray-50 text-link group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                  <a href="textarea.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                     Textarea
                   </a>
                 </li>
                 <li>
-                  <a href="toggle.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                  <a href="toggle.html" class="bg-gray-50 text-link group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                     Toggle
                   </a>
                 </li>
@@ -172,33 +167,87 @@
 
         <div class="container mx-auto max-w-5xl">
           <h1 class="text-4xl font-bold">
-            Textarea
+            Toggle
           </h1>
-          <p class="mt-4 text-slate-500">Textarea can be used with or without help text.</p>
+          <p class="mt-4 text-slate-500">Toggles come with the states on, off, focus, and disabled. They can be used with or without labels.
+          </p>
       
-          <h2 class="mt-8 text-xl">Textarea</h2>
-          <div class="my-8">
+          <h2 class="mt-8 text-xl">Toggle</h2>
+          <div class="my-8 space-x-4">
 
-            <div>
-              <label for="comment" class="block text-sm font-medium leading-6 text-highEmphasis">Add your comment</label>
-              <div class="mt-2">
-                <textarea rows="4" name="comment" id="comment" class="block w-full border-0 py-1.5 text-highEmphasis ring-1 ring-inset ring-border placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-focusRing sm:text-sm sm:leading-6" placeholder="Placeholder"></textarea>
-              </div>
-              <p class="mt-2 text-sm text-mediumEmphasis">Optional help text comes here.</p>
-            </div>
+            <button type="button" class="bg-gray-200 relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-focusRing focus:ring-offset-1" role="switch" aria-checked="false">
+              <span class="sr-only">Use setting</span>
+              <span aria-hidden="true" class="translate-x-0 pointer-events-none inline-block h-4 w-4 transform rounded-full bg-white shadow ring-2 ring-gray-500 transition duration-200 ease-in-out"></span>
+            </button>
+            <button type="button" class="bg-link relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-focusRing focus:ring-offset-1" role="switch" aria-checked="false">
+              <span class="sr-only">Use setting</span>
+              <span aria-hidden="true" class="translate-x-5 pointer-events-none inline-block h-4 w-4 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
+            </button>
 
           </div>
-<pre><code class="language-html">&lt;div&gt;
-  &lt;label for=&quot;comment&quot; class=&quot;block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Add your comment&lt;/label&gt;
-  &lt;div class=&quot;mt-2&quot;&gt;
-    &lt;textarea rows=&quot;4&quot; name=&quot;comment&quot; id=&quot;comment&quot; class=&quot;block w-full border-0 py-1.5 text-highEmphasis ring-1 ring-inset ring-border placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-focusRing sm:text-sm sm:leading-6&quot; placeholder=&quot;Placeholder&quot;&gt;&lt;/textarea&gt;
-  &lt;/div&gt;
-  &lt;p class=&quot;mt-2 text-sm text-mediumEmphasis&quot;&gt;Optional help text comes here.&lt;/p&gt;
+<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;bg-gray-200 relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-focusRing focus:ring-offset-1&quot; role=&quot;switch&quot; aria-checked=&quot;false&quot;&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;Use setting&lt;/span&gt;
+  &lt;span aria-hidden=&quot;true&quot; class=&quot;translate-x-0 pointer-events-none inline-block h-4 w-4 transform rounded-full bg-white shadow ring-2 ring-gray-500 transition duration-200 ease-in-out&quot;&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;bg-link relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-focusRing focus:ring-offset-1&quot; role=&quot;switch&quot; aria-checked=&quot;false&quot;&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;Use setting&lt;/span&gt;
+  &lt;span aria-hidden=&quot;true&quot; class=&quot;translate-x-5 pointer-events-none inline-block h-4 w-4 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out&quot;&gt;&lt;/span&gt;
+&lt;/button&gt;
+
+</code></pre>
+
+          <h2 class="mt-8 text-xl">Toggle with label</h2>
+          <div class="my-8">
+
+            <div class="flex items-center">
+              <button type="button" class="bg-gray-200 relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-focusRing focus:ring-offset-1" role="switch" aria-checked="false">
+                <span class="sr-only">Use setting</span>
+                <span aria-hidden="true" class="translate-x-0 pointer-events-none inline-block h-4 w-4 transform rounded-full bg-white shadow ring-2 ring-gray-500 transition duration-200 ease-in-out"></span>
+              </button>
+                <span class="ml-3 text-sm" id="toggle-label">
+                <span class="font-medium text-highEmphasis">Toggle label</span>
+              </span>
+            </div>
+            
+          </div>
+<pre><code class="language-html">&lt;div class=&quot;flex items-center&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;bg-gray-200 relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-focusRing focus:ring-offset-1&quot; role=&quot;switch&quot; aria-checked=&quot;false&quot;&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;Use setting&lt;/span&gt;
+    &lt;span aria-hidden=&quot;true&quot; class=&quot;translate-x-0 pointer-events-none inline-block h-4 w-4 transform rounded-full bg-white shadow ring-2 ring-gray-500 transition duration-200 ease-in-out&quot;&gt;&lt;/span&gt;
+  &lt;/button&gt;
+    &lt;span class=&quot;ml-3 text-sm&quot; id=&quot;toggle-label&quot;&gt;
+    &lt;span class=&quot;font-medium text-highEmphasis&quot;&gt;Toggle label&lt;/span&gt;
+  &lt;/span&gt;
+&lt;/div&gt;
+</code></pre>
+
+          <h2 class="mt-8 text-xl">Toggle disabled</h2>
+          <div class="my-8">
+
+            <div class="flex items-center">
+              <button type="button" disabled class="bg-gray-200 relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-0" role="switch" aria-checked="false">
+                <span class="sr-only">Use setting</span>
+                <span aria-hidden="true" class="translate-x-0 pointer-events-none inline-block h-4 w-4 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
+              </button>
+              <span class="ml-3 text-sm" id="toggle-label2">
+              <span class="font-medium text-highEmphasis">Toggle label</span>
+            </span>
+          </div>
+        
+          </div>
+<pre><code class="language-html">&lt;div class=&quot;flex items-center&quot;&gt;
+  &lt;button type=&quot;button&quot; disabled class=&quot;bg-gray-200 relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-0&quot; role=&quot;switch&quot; aria-checked=&quot;false&quot;&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;Use setting&lt;/span&gt;
+    &lt;span aria-hidden=&quot;true&quot; class=&quot;translate-x-0 pointer-events-none inline-block h-4 w-4 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out&quot;&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;span class=&quot;ml-3 text-sm&quot; id=&quot;toggle-label2&quot;&gt;
+  &lt;span class=&quot;font-medium text-highEmphasis&quot;&gt;Toggle label&lt;/span&gt;
+&lt;/span&gt;
 &lt;/div&gt;
 </code></pre>
 
           <h2 class="text-xl font-medium mt-8">Vue code</h2>
-          <p class="text-highEmphasis mt-4">For the Vue code, visit the <a href="https://tailwindui.com/components/application-ui/forms/textareas" class="text-link hover:underline" target="_blank">Tailwind UI textareas page</a>.</p>
+          <p class="text-highEmphasis mt-4">For the Vue code, visit the <a href="https://tailwindui.com/components/application-ui/forms/toggles" class="text-link hover:underline" target="_blank">Tailwind UI toggles</a>.</p>
 
         </div><!-- Ends container -->
       </div>

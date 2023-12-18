@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Textarea</title>
+  <title>Checkboxes</title>
   <link href="dist/styles.css" rel="stylesheet">
   <link href="dist/fontawesome/all.min.css" rel="stylesheet">
   <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
@@ -49,7 +49,7 @@
                       </a>
                     </li>
                     <li>
-                      <a href="checkboxes.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                      <a href="checkboxes.html" class="bg-gray-50 text-link group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                         Checkboxes
                       </a>
                     </li>
@@ -62,7 +62,7 @@
                       <a href="radios.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                         Radios
                       </a>
-                    </li>    
+                    </li>
                     <li>
                       <a href="select.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                         Select
@@ -74,7 +74,7 @@
                       </a>
                     </li>
                     <li>
-                      <a href="textarea.html" class="bg-gray-50 text-link group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                      <a href="textarea.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                         Textarea
                       </a>
                     </li>
@@ -115,7 +115,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="checkboxes.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                  <a href="checkboxes.html" class="bg-gray-50 text-link group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                     Checkboxes
                   </a>
                 </li>
@@ -133,14 +133,14 @@
                   <a href="select.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                     Select
                   </a>
-                </li>
+                </li>                
                 <li>
                   <a href="tabs.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                     Tabs
                   </a>
                 </li>
                 <li>
-                  <a href="textarea.html" class="bg-gray-50 text-link group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                  <a href="textarea.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                     Textarea
                   </a>
                 </li>
@@ -172,33 +172,110 @@
 
         <div class="container mx-auto max-w-5xl">
           <h1 class="text-4xl font-bold">
-            Textarea
+            Checkboxes
           </h1>
-          <p class="mt-4 text-slate-500">Textarea can be used with or without help text.</p>
+          <p class="mt-4 text-slate-500">Checkboxes come in four states: initial, checked, focused, and disabled.</p>
       
-          <h2 class="mt-8 text-xl">Textarea</h2>
+          <h2 class="mt-8 text-xl">List</h2>
           <div class="my-8">
 
             <div>
-              <label for="comment" class="block text-sm font-medium leading-6 text-highEmphasis">Add your comment</label>
-              <div class="mt-2">
-                <textarea rows="4" name="comment" id="comment" class="block w-full border-0 py-1.5 text-highEmphasis ring-1 ring-inset ring-border placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-focusRing sm:text-sm sm:leading-6" placeholder="Placeholder"></textarea>
-              </div>
-              <p class="mt-2 text-sm text-mediumEmphasis">Optional help text comes here.</p>
+              <label class="text-base font-semibold text-highEmphasis">Notifications</label>
+              <p class="text-sm text-mediumEmphasis">How do you prefer to receive notifications?</p>
+              <fieldset class="mt-4">
+                <legend class="sr-only">Notification method</legend>
+                <div class="space-y-4">
+                  <div class="flex items-center">
+                    <input id="email" name="notification-method" type="checkbox" checked class="h-4 w-4 border-border text-link focus:ring-link">
+                    <label for="email" class="ml-3 block text-sm font-medium leading-6 text-highEmphasis">Email</label>
+                  </div>
+                  <div class="flex items-center">
+                    <input id="sms" name="notification-method" type="checkbox" class="h-4 w-4 border-border text-link focus:ring-link">
+                    <label for="sms" class="ml-3 block text-sm font-medium leading-6 text-highEmphasis">Phone (SMS)</label>
+                  </div>
+                  <div class="flex items-center">
+                    <input id="push" name="notification-method" type="checkbox" class="h-4 w-4 border-border text-link focus:ring-link">
+                    <label for="push" class="ml-3 block text-sm font-medium leading-6 text-highEmphasis">Push notification</label>
+                  </div>
+                </div>
+              </fieldset>
             </div>
 
           </div>
 <pre><code class="language-html">&lt;div&gt;
-  &lt;label for=&quot;comment&quot; class=&quot;block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Add your comment&lt;/label&gt;
-  &lt;div class=&quot;mt-2&quot;&gt;
-    &lt;textarea rows=&quot;4&quot; name=&quot;comment&quot; id=&quot;comment&quot; class=&quot;block w-full border-0 py-1.5 text-highEmphasis ring-1 ring-inset ring-border placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-focusRing sm:text-sm sm:leading-6&quot; placeholder=&quot;Placeholder&quot;&gt;&lt;/textarea&gt;
-  &lt;/div&gt;
-  &lt;p class=&quot;mt-2 text-sm text-mediumEmphasis&quot;&gt;Optional help text comes here.&lt;/p&gt;
+  &lt;label class=&quot;text-base font-semibold text-highEmphasis&quot;&gt;Notifications&lt;/label&gt;
+  &lt;p class=&quot;text-sm text-mediumEmphasis&quot;&gt;How do you prefer to receive notifications?&lt;/p&gt;
+  &lt;fieldset class=&quot;mt-4&quot;&gt;
+    &lt;legend class=&quot;sr-only&quot;&gt;Notification method&lt;/legend&gt;
+    &lt;div class=&quot;space-y-4&quot;&gt;
+      &lt;div class=&quot;flex items-center&quot;&gt;
+        &lt;input id=&quot;email&quot; name=&quot;notification-method&quot; type=&quot;checkbox&quot; checked class=&quot;h-4 w-4 border-border text-link focus:ring-link&quot;&gt;
+        &lt;label for=&quot;email&quot; class=&quot;ml-3 block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Email&lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex items-center&quot;&gt;
+        &lt;input id=&quot;sms&quot; name=&quot;notification-method&quot; type=&quot;checkbox&quot; class=&quot;h-4 w-4 border-border text-link focus:ring-link&quot;&gt;
+        &lt;label for=&quot;sms&quot; class=&quot;ml-3 block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Phone (SMS)&lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex items-center&quot;&gt;
+        &lt;input id=&quot;push&quot; name=&quot;notification-method&quot; type=&quot;checkbox&quot; class=&quot;h-4 w-4 border-border text-link focus:ring-link&quot;&gt;
+        &lt;label for=&quot;push&quot; class=&quot;ml-3 block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Push notification&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+&lt;/div&gt;
+</code></pre>
+
+            <h2 class="mt-8 text-xl">List inline</h2>
+            <div class="my-8">
+
+              <div>
+                <label class="text-base font-semibold text-highEmphasis">Notifications</label>
+                <p class="text-sm text-mediumEmphasis">How do you prefer to receive notifications?</p>
+                <fieldset class="mt-4">
+                  <legend class="sr-only">Notification method</legend>
+                  <div class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
+                    <div class="flex items-center">
+                      <input id="email2" name="notification-method" type="checkbox" checked class="h-4 w-4 border-border text-link focus:ring-link">
+                      <label for="email2" class="ml-3 block text-sm font-medium leading-6 text-highEmphasis">Email</label>
+                    </div>
+                    <div class="flex items-center">
+                      <input id="sms2" name="notification-method" type="checkbox" class="h-4 w-4 border-border text-link focus:ring-link">
+                      <label for="sms2" class="ml-3 block text-sm font-medium leading-6 text-highEmphasis">Phone (SMS)</label>
+                    </div>
+                    <div class="flex items-center">
+                      <input id="push2" name="notification-method" type="checkbox" class="h-4 w-4 border-border text-link focus:ring-link">
+                      <label for="push2" class="ml-3 block text-sm font-medium leading-6 text-highEmphasis">Push notification</label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+
+            </div>
+<pre><code class="language-html">&lt;div&gt;
+  &lt;label class=&quot;text-base font-semibold text-highEmphasis&quot;&gt;Notifications&lt;/label&gt;
+  &lt;p class=&quot;text-sm text-mediumEmphasis&quot;&gt;How do you prefer to receive notifications?&lt;/p&gt;
+  &lt;fieldset class=&quot;mt-4&quot;&gt;
+    &lt;legend class=&quot;sr-only&quot;&gt;Notification method&lt;/legend&gt;
+    &lt;div class=&quot;space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0&quot;&gt;
+      &lt;div class=&quot;flex items-center&quot;&gt;
+        &lt;input id=&quot;email2&quot; name=&quot;notification-method&quot; type=&quot;checkbox&quot; checked class=&quot;h-4 w-4 border-border text-link focus:ring-link&quot;&gt;
+        &lt;label for=&quot;email2&quot; class=&quot;ml-3 block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Email&lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex items-center&quot;&gt;
+        &lt;input id=&quot;sms2&quot; name=&quot;notification-method&quot; type=&quot;checkbox&quot; class=&quot;h-4 w-4 border-border text-link focus:ring-link&quot;&gt;
+        &lt;label for=&quot;sms2&quot; class=&quot;ml-3 block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Phone (SMS)&lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex items-center&quot;&gt;
+        &lt;input id=&quot;push2&quot; name=&quot;notification-method&quot; type=&quot;checkbox&quot; class=&quot;h-4 w-4 border-border text-link focus:ring-link&quot;&gt;
+        &lt;label for=&quot;push2&quot; class=&quot;ml-3 block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Push notification&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
 &lt;/div&gt;
 </code></pre>
 
           <h2 class="text-xl font-medium mt-8">Vue code</h2>
-          <p class="text-highEmphasis mt-4">For the Vue code, visit the <a href="https://tailwindui.com/components/application-ui/forms/textareas" class="text-link hover:underline" target="_blank">Tailwind UI textareas page</a>.</p>
+          <p class="text-highEmphasis mt-4">For the Vue code, visit the <a href="https://tailwindui.com/components/application-ui/forms/checkboxes" class="text-link hover:underline" target="_blank">Tailwind UI checkboxes page</a>.</p>
 
         </div><!-- Ends container -->
       </div>

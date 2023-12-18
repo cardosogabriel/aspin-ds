@@ -50,6 +50,11 @@
                       </a>
                     </li>
                     <li>
+                      <a href="checkboxes.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                        Checkboxes
+                      </a>
+                    </li>
+                    <li>
                       <a href="input-text.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                         Input Text
                       </a>
@@ -73,7 +78,12 @@
                         Textarea
                       </a>
                     </li>
-                      </ul>
+                    <li>
+                      <a href="toggle.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                        Toggle
+                      </a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </nav>
@@ -105,6 +115,11 @@
                   </a>
                 </li>
                 <li>
+                  <a href="checkboxes.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                    Checkboxes
+                  </a>
+                </li>
+                <li>
                   <a href="input-text.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                     Input Text
                   </a>
@@ -126,6 +141,11 @@
                 <li>
                   <a href="textarea.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                     Textarea
+                  </a>
+                </li>
+                <li>
+                  <a href="toggle.html" class="text-gray-700 hover:text-linkHover hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                    Toggle
                   </a>
                 </li>
               </ul>
@@ -156,7 +176,7 @@
           <p class="mt-4 text-slate-500">Buttons are divided into button and button icon. Each comes in three sizes, two styles, and four states. Buttons also can have a trailing icon.</p>
       
           <h2 class="mt-8 text-xl">Button Primary</h2>
-          <div class="my-4 space-x-4">
+          <div class="my-8 space-x-4">
             <button type="button" class="bg-link px-2 py-1 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive">Button text</button>
             <button type="button" class="bg-link px-3 py-2 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive">Button text</button>
             <button type="button" class="bg-link px-4 py-3 text-base font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive">Button text</button>
@@ -166,7 +186,7 @@
 &lt;button type=&quot;button&quot; class=&quot;bg-link px-4 py-3 text-base font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive&quot;&gt;Button text&lt;/button&gt;</code></pre>
       
           <h2 class="mt-8 text-lg">Button Secondary</h2>
-          <div class="my-4 space-x-4">
+          <div class="my-8 space-x-4">
             <button type="button" class="px-2 py-1 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400">Button text</button>
             <button type="button" class="px-3 py-2 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400">Button text</button>
             <button type="button" class="px-4 py-3 text-base text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400">Button text</button>
@@ -175,8 +195,15 @@
 &lt;button type=&quot;button&quot; class=&quot;px-3 py-2 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400&quot;&gt;Button text&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;px-4 py-3 text-base text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400&quot;&gt;Button text&lt;/button&gt;</code></pre>
       
+          <h2 class="mt-8 text-xl">Button Danger</h2>
+          <div class="my-8 space-x-4">
+            <button type="button" class="px-3 py-2 text-sm font-medium text-red-900 ring-1 ring-inset ring-red-500 hover:bg-red-700 hover:ring-red-700 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-red-500 active:bg-red-800 active:ring-red-800">Button text</button>
+          </div>
+<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;px-3 py-2 text-sm font-medium text-red-900 ring-1 ring-inset ring-red-500 hover:bg-red-700 hover:ring-red-700 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-red-500 active:bg-red-800 active:ring-red-800&quot;&gt;Button text&lt;/button&gt;
+</code></pre>
+
           <h2 class="mt-8 text-lg">Button with Leading Icon</h2>
-          <div class="my-4 space-x-4">
+          <div class="my-8 space-x-4">
             <button type="button" class="bg-link px-2 py-1 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive"><i class="far fa-plus text-base mr-2"></i>Button text</button>
             <button type="button" class="bg-link px-3 py-2 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive"><i class="far fa-plus text-base mr-2"></i>Button text</button>
             <button type="button" class="bg-link px-4 py-3 text-base font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive"><i class="far fa-plus text-base mr-2"></i>Button text</button>
@@ -186,7 +213,7 @@
 &lt;button type=&quot;button&quot; class=&quot;bg-link px-4 py-3 text-base font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive&quot;&gt;&lt;i class=&quot;far fa-plus text-base mr-2&quot;&gt;&lt;/i&gt;Button text&lt;/button&gt;</code></pre>
       
           <h2 class="mt-8 text-lg">Button Icon Primary</h2>
-          <div class="my-4 space-x-4">
+          <div class="my-8 space-x-4">
             <button type="button" class="bg-link px-2 py-1.5 text-white leading-4 hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive"><i class="far fa-plus text-base w-4"></i></button>
             <button type="button" class="bg-link px-3 py-2.5 text-white leading-4 hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive"><i class="far fa-plus text-base w-4"></i></button>
             <button type="button" class="bg-link px-4 py-4 text-white leading-4 hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive"><i class="far fa-plus text-base w-4"></i></button>
@@ -196,7 +223,7 @@
 &lt;button type=&quot;button&quot; class=&quot;bg-link px-4 py-4 text-white leading-4 hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive&quot;&gt;&lt;i class=&quot;far fa-plus text-base w-4&quot;&gt;&lt;/i&gt;&lt;/button&gt;</code></pre>
       
           <h2 class="mt-8 text-lg">Button Icon Secondary</h2>
-          <div class="my-4 space-x-4">
+          <div class="my-8 space-x-4">
             <button type="button" class="px-2 py-1.5 text-highEmphasis leading-4 ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400"><i class="far fa-plus text-base w-4"></i></button>
             <button type="button" class="px-3 py-2.5 text-highEmphasis leading-4 ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400"><i class="far fa-plus text-base w-4"></i></button>
             <button type="button" class="px-4 py-4 text-highEmphasis leading-4 ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400"><i class="far fa-plus text-base w-4"></i></button>
