@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-white">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Layouts</title>
+  <link href="dist/styles.css" rel="stylesheet">
+  <link href="dist/fontawesome/all.min.css" rel="stylesheet">
+  <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
+  <link href="dist/prism/prism.css" rel="stylesheet">
+  <script src="dist/prism/prism.js"></script>
+  <link rel="icon" type="image/png" href="https://demo.intersell.cloud/graphics/templates/aspin_demo/favicons/favicon-16x16.png">
+</head>
+<body class="h-full">
+
+  <div>
+    <!-- Sidebar code -->
+    <div id="sidebarContainer"></div>
+
+    <main class="py-10 lg:pl-72">
+      <div class="px-4 sm:px-6 lg:px-8">
+
+        <!-- Content -->
+
+        <div class="container mx-auto max-w-5xl">
+          <h1 class="text-4xl font-bold">
+            Form Layouts
+          </h1>
+          <p class="mt-4 text-slate-500">A stacked form layout with input text, select, textarea, checkboxes, radios, and buttons.</p>
+      
+          <h2 class="mt-8 text-xl">Stacked</h2>
+          <div class="my-8">
+
+            <div class="max-w-2xl">
+              <form>
+                <div class="border-b border-gray-900/10 pb-6">
+                  <h2 class="text-base font-semibold leading-7 text-highEmphasis">Section Title</h2>
+                  <p class="mt-1 text-sm leading-6 text-mediumEmphasis">This is a section description, optional.</p>
+
+                  <!-- Input Text -->
+                  <div class="mt-6">
+                    <label for="text" class="block text-sm font-medium leading-6 text-highEmphasis">Input label</label>
+                    <div class="mt-2">
+                      <input type="text" name="text" id="text" class="block w-full border-0 py-1.5 text-highEmphasis ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-focusRing sm:text-sm sm:leading-6" placeholder="Placeholder">
+                    </div>
+                    <p class="mt-2 text-sm text-mediumEmphasis">Optional help text comes here.</p>
+                  </div>
+
+                  <!-- Select -->
+                  <div class="mt-6">
+                    <label id="listbox-label" class="block text-sm font-medium leading-6 text-highEmphasis">Select label</label>
+                    <div class="relative mt-2">
+                      <button type="button" class="relative w-full cursor-default bg-white py-1.5 pl-3 pr-10 text-left text-highEmphasis ring-1 ring-inset ring-border focus:outline-none focus:ring-2 focus:ring-focusRing sm:text-sm sm:leading-6" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label">
+                        <span class="block truncate">First Option</span>
+                        <span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
+                          <i class="far fa-chevron-down text-mediumEmphasis inset-y-0 right-0 flex items-center"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Textarea -->
+                  <div class="mt-6">
+                    <label for="comment" class="block text-sm font-medium leading-6 text-highEmphasis">Add your comment</label>
+                    <div class="mt-2">
+                      <textarea rows="4" name="comment" id="comment" class="block w-full border-0 py-1.5 text-highEmphasis ring-1 ring-inset ring-border placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-focusRing sm:text-sm sm:leading-6" placeholder="Placeholder"></textarea>
+                    </div>
+                    <p class="mt-2 text-sm text-mediumEmphasis">Optional help text comes here.</p>
+                  </div>
+                </div>
+
+                <!-- Checkboxes -->
+                <div class="border-b border-gray-900/10 pb-6">
+                  <div class="pt-6">
+                    <label class="text-base font-semibold text-highEmphasis">Notifications</label>
+                    <p class="text-sm text-mediumEmphasis">How do you prefer to receive notifications?</p>
+                    <fieldset class="mt-4">
+                      <legend class="sr-only">Notification method</legend>
+                      <div class="space-y-4">
+                        <div class="flex items-center">
+                          <input id="email" name="notification-method" type="checkbox" checked class="h-4 w-4 border-border text-link focus:ring-link">
+                          <label for="email" class="ml-3 block text-sm font-medium leading-6 text-highEmphasis">Email</label>
+                        </div>
+                        <div class="flex items-center">
+                          <input id="sms" name="notification-method" type="checkbox" class="h-4 w-4 border-border text-link focus:ring-link">
+                          <label for="sms" class="ml-3 block text-sm font-medium leading-6 text-highEmphasis">Phone (SMS)</label>
+                        </div>
+                        <div class="flex items-center">
+                          <input id="push" name="notification-method" type="checkbox" class="h-4 w-4 border-border text-link focus:ring-link">
+                          <label for="push" class="ml-3 block text-sm font-medium leading-6 text-highEmphasis">Push notification</label>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+
+                <!-- Radios -->
+                <div class="border-b border-gray-900/10 pb-6">
+                  <div class="pt-6">
+                    <label class="text-base font-semibold text-highEmphasis">Notifications</label>
+                    <p class="text-sm text-mediumEmphasis">How do you prefer to receive notifications?</p>
+                    <fieldset class="mt-4">
+                      <legend class="sr-only">Notification method</legend>
+                      <div class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
+                        <div class="flex items-center">
+                          <input id="email2" name="notification-method2" type="radio" checked class="h-4 w-4 border-border text-link focus:ring-link">
+                          <label for="email2" class="ml-3 block text-sm font-medium leading-6 text-highEmphasis">Email</label>
+                        </div>
+                        <div class="flex items-center">
+                          <input id="sms2" name="notification-method2" type="radio" class="h-4 w-4 border-border text-link focus:ring-link">
+                          <label for="sms2" class="ml-3 block text-sm font-medium leading-6 text-highEmphasis">Phone (SMS)</label>
+                        </div>
+                        <div class="flex items-center">
+                          <input id="push2" name="notification-method2" type="radio" class="h-4 w-4 border-border text-link focus:ring-link">
+                          <label for="push2" class="ml-3 block text-sm font-medium leading-6 text-highEmphasis">Push notification</label>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+                
+                <!-- Buttons -->
+                <div class="mt-6 flex items-center gap-x-4">
+                  <button type="button" class="bg-link px-3 py-2 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive">Save</button>
+                  <button type="button" class="px-3 py-2 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400">Cancel</button>
+                </div>
+              </form>
+            </div>
+          </div>
+<pre><code class="language-html">&lt;form&gt;
+  &lt;div class=&quot;border-b border-gray-900/10 pb-6&quot;&gt;
+    &lt;h2 class=&quot;text-base font-semibold leading-7 text-highEmphasis&quot;&gt;Section Title&lt;/h2&gt;
+    &lt;p class=&quot;mt-1 text-sm leading-6 text-mediumEmphasis&quot;&gt;This is a section description, optional.&lt;/p&gt;
+
+    &lt;!-- Input Text --&gt;
+    &lt;div class=&quot;mt-6&quot;&gt;
+      &lt;label for=&quot;text&quot; class=&quot;block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Input label&lt;/label&gt;
+      &lt;div class=&quot;mt-2&quot;&gt;
+        &lt;input type=&quot;text&quot; name=&quot;text&quot; id=&quot;text&quot; class=&quot;block w-full border-0 py-1.5 text-highEmphasis ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-focusRing sm:text-sm sm:leading-6&quot; placeholder=&quot;Placeholder&quot;&gt;
+      &lt;/div&gt;
+      &lt;p class=&quot;mt-2 text-sm text-mediumEmphasis&quot;&gt;Optional help text comes here.&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Select --&gt;
+    &lt;div class=&quot;mt-6&quot;&gt;
+      &lt;label id=&quot;listbox-label&quot; class=&quot;block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Select label&lt;/label&gt;
+      &lt;div class=&quot;relative mt-2&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;relative w-full cursor-default bg-white py-1.5 pl-3 pr-10 text-left text-highEmphasis ring-1 ring-inset ring-border focus:outline-none focus:ring-2 focus:ring-focusRing sm:text-sm sm:leading-6&quot; aria-haspopup=&quot;listbox&quot; aria-expanded=&quot;true&quot; aria-labelledby=&quot;listbox-label&quot;&gt;
+          &lt;span class=&quot;block truncate&quot;&gt;First Option&lt;/span&gt;
+          &lt;span class=&quot;pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3&quot;&gt;
+            &lt;i class=&quot;far fa-chevron-down text-mediumEmphasis inset-y-0 right-0 flex items-center&quot;&gt;&lt;/i&gt;
+          &lt;/span&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Textarea --&gt;
+    &lt;div class=&quot;mt-6&quot;&gt;
+      &lt;label for=&quot;comment&quot; class=&quot;block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Add your comment&lt;/label&gt;
+      &lt;div class=&quot;mt-2&quot;&gt;
+        &lt;textarea rows=&quot;4&quot; name=&quot;comment&quot; id=&quot;comment&quot; class=&quot;block w-full border-0 py-1.5 text-highEmphasis ring-1 ring-inset ring-border placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-focusRing sm:text-sm sm:leading-6&quot; placeholder=&quot;Placeholder&quot;&gt;&lt;/textarea&gt;
+      &lt;/div&gt;
+      &lt;p class=&quot;mt-2 text-sm text-mediumEmphasis&quot;&gt;Optional help text comes here.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Checkboxes --&gt;
+  &lt;div class=&quot;border-b border-gray-900/10 pb-6&quot;&gt;
+    &lt;div class=&quot;pt-6&quot;&gt;
+      &lt;label class=&quot;text-base font-semibold text-highEmphasis&quot;&gt;Notifications&lt;/label&gt;
+      &lt;p class=&quot;text-sm text-mediumEmphasis&quot;&gt;How do you prefer to receive notifications?&lt;/p&gt;
+      &lt;fieldset class=&quot;mt-4&quot;&gt;
+        &lt;legend class=&quot;sr-only&quot;&gt;Notification method&lt;/legend&gt;
+        &lt;div class=&quot;space-y-4&quot;&gt;
+          &lt;div class=&quot;flex items-center&quot;&gt;
+            &lt;input id=&quot;email&quot; name=&quot;notification-method&quot; type=&quot;checkbox&quot; checked class=&quot;h-4 w-4 border-border text-link focus:ring-link&quot;&gt;
+            &lt;label for=&quot;email&quot; class=&quot;ml-3 block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Email&lt;/label&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;flex items-center&quot;&gt;
+            &lt;input id=&quot;sms&quot; name=&quot;notification-method&quot; type=&quot;checkbox&quot; class=&quot;h-4 w-4 border-border text-link focus:ring-link&quot;&gt;
+            &lt;label for=&quot;sms&quot; class=&quot;ml-3 block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Phone (SMS)&lt;/label&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;flex items-center&quot;&gt;
+            &lt;input id=&quot;push&quot; name=&quot;notification-method&quot; type=&quot;checkbox&quot; class=&quot;h-4 w-4 border-border text-link focus:ring-link&quot;&gt;
+            &lt;label for=&quot;push&quot; class=&quot;ml-3 block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Push notification&lt;/label&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/fieldset&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Radios --&gt;
+  &lt;div class=&quot;border-b border-gray-900/10 pb-6&quot;&gt;
+    &lt;div class=&quot;pt-6&quot;&gt;
+      &lt;label class=&quot;text-base font-semibold text-highEmphasis&quot;&gt;Notifications&lt;/label&gt;
+      &lt;p class=&quot;text-sm text-mediumEmphasis&quot;&gt;How do you prefer to receive notifications?&lt;/p&gt;
+      &lt;fieldset class=&quot;mt-4&quot;&gt;
+        &lt;legend class=&quot;sr-only&quot;&gt;Notification method&lt;/legend&gt;
+        &lt;div class=&quot;space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0&quot;&gt;
+          &lt;div class=&quot;flex items-center&quot;&gt;
+            &lt;input id=&quot;email2&quot; name=&quot;notification-method2&quot; type=&quot;radio&quot; checked class=&quot;h-4 w-4 border-border text-link focus:ring-link&quot;&gt;
+            &lt;label for=&quot;email2&quot; class=&quot;ml-3 block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Email&lt;/label&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;flex items-center&quot;&gt;
+            &lt;input id=&quot;sms2&quot; name=&quot;notification-method2&quot; type=&quot;radio&quot; class=&quot;h-4 w-4 border-border text-link focus:ring-link&quot;&gt;
+            &lt;label for=&quot;sms2&quot; class=&quot;ml-3 block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Phone (SMS)&lt;/label&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;flex items-center&quot;&gt;
+            &lt;input id=&quot;push2&quot; name=&quot;notification-method2&quot; type=&quot;radio&quot; class=&quot;h-4 w-4 border-border text-link focus:ring-link&quot;&gt;
+            &lt;label for=&quot;push2&quot; class=&quot;ml-3 block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Push notification&lt;/label&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/fieldset&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;!-- Buttons --&gt;
+  &lt;div class=&quot;mt-6 flex items-center justify-end gap-x-4&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;px-3 py-2 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400&quot;&gt;Cancel&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;bg-link px-3 py-2 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive&quot;&gt;Save&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+</code></pre>
+
+          <h2 class="text-xl font-medium mt-8">Vue code</h2>
+          <p class="text-highEmphasis mt-4">For the Vue code, visit the <a href="https://tailwindui.com/components/application-ui/forms/form-layouts" class="text-link hover:underline" target="_blank">Tailwind UI form layouts page</a>.</p>
+
+        </div><!-- Ends container -->
+      </div>
+    </main>
+  </div>
+
+  <script src="dist/nav.js"></script>
+</body>
+</html>
