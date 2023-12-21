@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-white">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card</title>
+  <link href="dist/styles.css" rel="stylesheet">
+  <link href="dist/fontawesome/all.min.css" rel="stylesheet">
+  <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
+  <link href="dist/prism/prism.css" rel="stylesheet">
+  <script src="dist/prism/prism.js"></script>
+  <link rel="icon" type="image/png" href="https://demo.intersell.cloud/graphics/templates/aspin_demo/favicons/favicon-16x16.png">
+</head>
+<body class="h-full">
+
+  <div>
+    <!-- Sidebar code -->
+    <div id="sidebarContainer"></div>
+
+    <main class="py-10 lg:pl-72">
+      <div class="px-4 sm:px-6 lg:px-8">
+
+        <!-- Content -->
+
+        <div class="container mx-auto max-w-5xl">
+          <h1 class="text-4xl font-bold">
+            Card
+          </h1>
+          <p class="mt-4 text-slate-500">Cards can be used with elevation, over a gray background, or as a flat over a white background. It can have a separate heading, and a button or link as action.</p>
+      
+          <h2 class="mt-8 text-xl">Default</h2>
+          <div class="my-8">
+
+            <!-- Requires a container with bg-gray-50 -->
+            <div class="bg-gray-50 px-4 py-5 sm:p-10">
+              <div class="bg-white shadow sm:rounded-sm">
+                <div class="px-4 py-5 sm:p-6">
+                  <h3 class="text-base font-semibold leading-6 text-highEmphasis">Manage subscription</h3>
+                  <div class="mt-2 max-w-xl text-sm text-mediumEmphasis">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatibus corrupti atque repudiandae nam.</p>
+                  </div>
+                  <div class="mt-5">
+                    <!-- Button -->
+                    <button type="button" class="bg-link px-3 py-2 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive">Change plan</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+<pre><code class="language-html">&lt;!-- Requires a container with bg-gray-50 --&gt;
+&lt;div class=&quot;bg-gray-50 px-4 py-5 sm:p-10&quot;&gt;
+  &lt;div class=&quot;bg-white shadow sm:rounded-sm&quot;&gt;
+    &lt;div class=&quot;px-4 py-5 sm:p-6&quot;&gt;
+      &lt;h3 class=&quot;text-base font-semibold leading-6 text-highEmphasis&quot;&gt;Manage subscription&lt;/h3&gt;
+      &lt;div class=&quot;mt-2 max-w-xl text-sm text-mediumEmphasis&quot;&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatibus corrupti atque repudiandae nam.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;mt-5&quot;&gt;
+        &lt;!-- Button --&gt;
+        &lt;button type=&quot;button&quot; class=&quot;bg-link px-3 py-2 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive&quot;&gt;Change plan&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+          <h2 class="mt-8 text-xl">With link</h2>
+          <div class="my-8">
+
+            <!-- Requires a container with bg-gray-50 -->
+            <div class="bg-gray-50 px-4 py-5 sm:p-10">
+              <div class="bg-white shadow sm:rounded-sm">
+                <div class="px-4 py-5 sm:p-6">
+                  <h3 class="text-base font-semibold leading-6 text-highEmphasis">Manage subscription</h3>
+                  <div class="mt-2 max-w-xl text-sm text-mediumEmphasis">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatibus corrupti atque repudiandae nam.</p>
+                  </div>
+                  <div class="mt-5">
+                    <!-- Link -->
+                    <a href="#" class="text-sm leading-6 font-medium text-link hover:text-linkHover hover:underline outline-focusRing">Change plan<i class="far fa-external-link ml-2"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+<pre><code class="language-html">&lt;!-- Requires a container with bg-gray-50 --&gt;
+&lt;div class=&quot;bg-gray-50 px-4 py-5 sm:p-10&quot;&gt;
+  &lt;div class=&quot;bg-white shadow sm:rounded-sm&quot;&gt;
+    &lt;div class=&quot;px-4 py-5 sm:p-6&quot;&gt;
+      &lt;h3 class=&quot;text-base font-semibold leading-6 text-highEmphasis&quot;&gt;Manage subscription&lt;/h3&gt;
+      &lt;div class=&quot;mt-2 max-w-xl text-sm text-mediumEmphasis&quot;&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatibus corrupti atque repudiandae nam.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;mt-5&quot;&gt;
+        &lt;!-- Link --&gt;
+        &lt;a href=&quot;#&quot; class=&quot;text-sm leading-6 font-medium text-link hover:text-linkHover hover:underline outline-focusRing&quot;&gt;Change plan&lt;i class=&quot;far fa-external-link ml-2&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+          <h2 class="mt-8 text-xl">With heading</h2>
+          <div class="my-8">
+
+            <!-- Requires a container with bg-gray-50 -->
+            <div class="bg-gray-50 px-4 py-5 sm:p-10">
+              <div class="bg-white shadow sm:rounded-sm">
+                <div class="p-4 border-b border-gray-200">
+                  <h3 class="text-base font-semibold leading-6 text-highEmphasis">Manage subscription</h3>
+                </div>
+                <div class="px-4 py-5 sm:p-6">
+                  <div class="max-w-xl text-sm text-mediumEmphasis">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatibus corrupti atque repudiandae nam.</p>
+                  </div>
+                  <div class="mt-5">
+                    <!-- Button -->
+                    <button type="button" class="bg-link px-3 py-2 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive">Change plan</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+<pre><code class="language-html">&lt;!-- Requires a container with bg-gray-50 --&gt;
+&lt;div class=&quot;bg-gray-50 px-4 py-5 sm:p-10&quot;&gt;
+  &lt;div class=&quot;bg-white shadow sm:rounded-sm&quot;&gt;
+    &lt;div class=&quot;p-4 border-b border-gray-200&quot;&gt;
+      &lt;h3 class=&quot;text-base font-semibold leading-6 text-highEmphasis&quot;&gt;Manage subscription&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;px-4 py-5 sm:p-6&quot;&gt;
+      &lt;div class=&quot;max-w-xl text-sm text-mediumEmphasis&quot;&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatibus corrupti atque repudiandae nam.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;mt-5&quot;&gt;
+        &lt;!-- Button --&gt;
+        &lt;button type=&quot;button&quot; class=&quot;bg-link px-3 py-2 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive&quot;&gt;Change plan&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+          <h2 class="mt-8 text-xl">Flat</h2>
+          <div class="my-8">
+
+            <!-- Requires a container with bg-white -->
+            <div class="bg-white px-4 sm:px-10">
+              <div class="bg-white sm:rounded-sm border border-gray-200">
+                <div class="p-4 border-b border-gray-200">
+                  <h3 class="text-base font-semibold leading-6 text-highEmphasis">Manage subscription</h3>
+                </div>
+                <div class="px-4 py-5 sm:p-6">
+                  <div class="max-w-xl text-sm text-mediumEmphasis">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatibus corrupti atque repudiandae nam.</p>
+                  </div>
+                  <div class="mt-5">
+                    <!-- Button -->
+                    <button type="button" class="bg-link px-3 py-2 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive">Change plan</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+<pre><code class="language-html">&lt;!-- Requires a container with bg-white --&gt;
+&lt;div class=&quot;bg-white px-4 sm:px-10&quot;&gt;
+  &lt;div class=&quot;bg-white sm:rounded-sm border border-gray-200&quot;&gt;
+    &lt;div class=&quot;p-4 border-b border-gray-200&quot;&gt;
+      &lt;h3 class=&quot;text-base font-semibold leading-6 text-highEmphasis&quot;&gt;Manage subscription&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;px-4 py-5 sm:p-6&quot;&gt;
+      &lt;div class=&quot;max-w-xl text-sm text-mediumEmphasis&quot;&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatibus corrupti atque repudiandae nam.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;mt-5&quot;&gt;
+        &lt;!-- Button --&gt;
+        &lt;button type=&quot;button&quot; class=&quot;bg-link px-3 py-2 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive&quot;&gt;Change plan&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+          <h2 class="text-xl font-medium mt-8">Vue code</h2>
+          <p class="text-highEmphasis mt-4">For the Vue code, visit the <a href="https://tailwindui.com/components/application-ui/elements/buttons" class="text-link hover:underline" target="_blank">Tailwind UI buttons page</a>.</p>
+
+        </div><!-- Ends container -->
+      </div>
+    </main>
+  </div>
+
+  <script src="dist/nav.js"></script>
+</body>
+</html>

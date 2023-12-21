@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Button</title>
+  <title>Link</title>
   <link href="dist/styles.css" rel="stylesheet">
   <link href="dist/fontawesome/all.min.css" rel="stylesheet">
   <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
@@ -24,17 +24,27 @@
 
         <div class="container mx-auto max-w-5xl">
           <h1 class="text-4xl font-bold">
-            Component
+            Link
           </h1>
-          <p class="mt-4 text-slate-500">Buttons are divided into button and button icon. Each comes in three sizes, two styles, and four states. Buttons also can have a trailing icon.</p>
+          <p class="mt-4 text-slate-500">Link can be used without or with an icon when the icon has a strong significance. States are initial, hover, and focus.</p>
       
-          <h2 class="mt-8 text-xl">Button Primary</h2>
+          <h2 class="mt-8 text-xl">Link</h2>
           <div class="my-8">
 
-
+            <a href="#" class="text-sm leading-6 font-medium text-link hover:text-linkHover hover:underline outline-focusRing">View documentation</a>
 
           </div>
-<pre><code class="language-html"></code></pre>
+<pre><code class="language-html">&lt;a href=&quot;#&quot; class=&quot;text-sm leading-6 font-medium text-link hover:text-linkHover hover:underline outline-focusRing&quot;&gt;View documentation&lt;/a&gt;
+</code></pre>
+          
+          <h2 class="mt-8 text-xl">Link with icon</h2>
+          <div class="my-8">
+
+            <a href="#" class="text-sm leading-6 font-medium text-link hover:text-linkHover hover:underline outline-focusRing">View documentation<i class="far fa-external-link ml-2"></i></a>
+
+          </div>
+<pre><code class="language-html">&lt;a href=&quot;#&quot; class=&quot;text-sm leading-6 font-medium text-link hover:text-linkHover hover:underline outline-focusRing&quot;&gt;View documentation&lt;i class=&quot;far fa-external-link ml-2&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+</code></pre>
 
           <h2 class="text-xl font-medium mt-8">Vue code</h2>
           <p class="text-highEmphasis mt-4">For the Vue code, visit the <a href="https://tailwindui.com/components/application-ui/elements/buttons" class="text-link hover:underline" target="_blank">Tailwind UI buttons page</a>.</p>

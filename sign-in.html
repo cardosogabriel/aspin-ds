@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-white">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-In Form</title>
+  <link href="dist/styles.css" rel="stylesheet">
+  <link href="dist/fontawesome/all.min.css" rel="stylesheet">
+  <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
+  <link href="dist/prism/prism.css" rel="stylesheet">
+  <script src="dist/prism/prism.js"></script>
+  <link rel="icon" type="image/png" href="https://demo.intersell.cloud/graphics/templates/aspin_demo/favicons/favicon-16x16.png">
+</head>
+<body class="h-full ">
+
+  <div>
+    <!-- Sidebar code -->
+    <div id="sidebarContainer"></div>
+
+    <main class="py-10 lg:pl-72">
+      <div class="px-4 sm:px-6 lg:px-8">
+
+        <!-- Content -->
+
+        <div class="container mx-auto max-w-5xl">
+          <h1 class="text-4xl font-bold">
+            Sign-In Form
+          </h1>
+          <p class="mt-4 text-slate-500">The sign-in form can be used over a white background, or a card.</p>
+      
+          <h2 class="mt-8 text-xl">On flat background</h2>
+          <div class="my-8">
+
+            <div class="flex min-h-full flex-col justify-center py-12">
+              <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+                <img class="mx-auto h-10 w-auto" src="dist/img/aspin-logo.png" alt="Aspin Management Systems Ltd.">
+                <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-highEmphasis">Sign in to your account</h2>
+              </div>
+
+              <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-sm">
+                <form class="space-y-6" action="#" method="POST">
+                  <!-- Input text -->
+                  <div>
+                    <label for="email" class="block text-sm font-medium leading-6 text-highEmphasis">Email address</label>
+                    <div class="mt-2">
+                      <input type="email" name="email" id="email" autocomplete="email" required class="block w-full border-0 py-1.5 text-highEmphasis ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-focusRing sm:text-sm sm:leading-6">
+                    </div>
+                  </div>
+
+                  <!-- Input text -->
+                  <div>
+                    <label for="password" class="block text-sm font-medium leading-6 text-highEmphasis">Password</label>
+                    <div class="mt-2">
+                      <input type="password" name="password" id="password" autocomplete="current-password" required class="block w-full border-0 py-1.5 text-highEmphasis ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-focusRing sm:text-sm sm:leading-6">
+                    </div>
+                  </div>
+
+                  <div class="flex items-center justify-between">
+                    <!-- Checkbox -->
+                    <div class="flex items-center">
+                      <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 border-border text-link focus:ring-link">
+                      <label for="remember-me" class="ml-3 block text-sm font-medium leading-6 text-highEmphasis">Remember me</label>
+                    </div>
+
+                    <div class="text-sm leading-6">
+                      <a href="#" class="font-medium text-link hover:text-linkHover hover:underline outline-focusRing">Forgot password?</a>
+                    </div>
+                  </div>
+
+                  <!-- Button -->
+                  <div>
+                    <button type="submit" class="flex w-full justify-center bg-link px-3 py-2 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive">Sign in</button>
+                  </div>
+                </form>
+
+                <p class="mt-10 text-center text-sm text-gray-500">
+                  Doesn't have an account?
+                  <a href="#" class="font-medium leading-6 text-link hover:text-linkHover hover:underline outline-focusRing">Register now</a>
+                </p>
+              </div>
+            </div>
+
+          </div>
+<pre><code class="language-html">&lt;div class=&quot;flex min-h-full flex-col justify-center py-12&quot;&gt;
+  &lt;div class=&quot;sm:mx-auto sm:w-full sm:max-w-sm&quot;&gt;
+    &lt;img class=&quot;mx-auto h-10 w-auto&quot; src=&quot;dist/img/aspin-logo.png&quot; alt=&quot;Aspin Management Systems Ltd.&quot;&gt;
+    &lt;h2 class=&quot;mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-highEmphasis&quot;&gt;Sign in to your account&lt;/h2&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;mt-8 sm:mx-auto sm:w-full sm:max-w-sm&quot;&gt;
+    &lt;form class=&quot;space-y-6&quot; action=&quot;#&quot; method=&quot;POST&quot;&gt;
+      &lt;!-- Input text --&gt;
+      &lt;div&gt;
+        &lt;label for=&quot;email&quot; class=&quot;block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Email address&lt;/label&gt;
+        &lt;div class=&quot;mt-2&quot;&gt;
+          &lt;input type=&quot;email&quot; name=&quot;email&quot; id=&quot;email&quot; autocomplete=&quot;email&quot; required class=&quot;block w-full border-0 py-1.5 text-highEmphasis ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-focusRing sm:text-sm sm:leading-6&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Input text --&gt;
+      &lt;div&gt;
+        &lt;label for=&quot;password&quot; class=&quot;block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Password&lt;/label&gt;
+        &lt;div class=&quot;mt-2&quot;&gt;
+          &lt;input type=&quot;password&quot; name=&quot;password&quot; id=&quot;password&quot; autocomplete=&quot;current-password&quot; required class=&quot;block w-full border-0 py-1.5 text-highEmphasis ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-focusRing sm:text-sm sm:leading-6&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;flex items-center justify-between&quot;&gt;
+        &lt;!-- Checkbox --&gt;
+        &lt;div class=&quot;flex items-center&quot;&gt;
+          &lt;input id=&quot;remember-me&quot; name=&quot;remember-me&quot; type=&quot;checkbox&quot; class=&quot;h-4 w-4 border-border text-link focus:ring-link&quot;&gt;
+          &lt;label for=&quot;remember-me&quot; class=&quot;ml-3 block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Remember me&lt;/label&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;text-sm leading-6&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;font-medium text-link hover:text-linkHover hover:underline outline-focusRing&quot;&gt;Forgot password?&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Button --&gt;
+      &lt;div&gt;
+        &lt;button type=&quot;submit&quot; class=&quot;flex w-full justify-center bg-link px-3 py-2 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive&quot;&gt;Sign in&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/form&gt;
+
+    &lt;p class=&quot;mt-10 text-center text-sm text-gray-500&quot;&gt;
+      Doesn't have an account?
+      &lt;a href=&quot;#&quot; class=&quot;font-medium leading-6 text-link hover:text-linkHover hover:underline outline-focusRing&quot;&gt;Register now&lt;/a&gt;
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+          <h2 class="mt-8 text-xl">In a card</h2>
+          <div class="my-8">
+
+            <!-- Requires a container with bg-gray-50 -->
+            <div class="bg-gray-50">
+              <div class="flex min-h-full flex-col justify-center py-12">
+                <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+                  <img class="mx-auto h-10 w-auto mix-blend-darken" src="dist/img/aspin-logo.png" alt="Aspin Management Systems Ltd.">
+                  <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-highEmphasis">Sign in to your account</h2>
+                </div>
+
+                <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-[480px]">
+                  <div class="bg-white px-6 py-10 shadow sm:rounded-sm sm:px-10">
+                    <form class="space-y-6" action="#" method="POST">
+                      <!-- Input text -->
+                      <div>
+                        <label for="email2" class="block text-sm font-medium leading-6 text-highEmphasis">Email address</label>
+                        <div class="mt-2">
+                          <input type="email" name="email2" id="email2" autocomplete="email" required class="block w-full border-0 py-1.5 text-highEmphasis ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-focusRing sm:text-sm sm:leading-6">
+                        </div>
+                      </div>
+
+                      <!-- Input text -->
+                      <div>
+                        <label for="password2" class="block text-sm font-medium leading-6 text-highEmphasis">Password</label>
+                        <div class="mt-2">
+                          <input type="password" name="password2" id="password2" autocomplete="current-password" required class="block w-full border-0 py-1.5 text-highEmphasis ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-focusRing sm:text-sm sm:leading-6">
+                        </div>
+                      </div>
+
+                      <div class="flex items-center justify-between">
+                        <!-- Checkbox -->
+                        <div class="flex items-center">
+                          <input id="remember-me2" name="remember-me2" type="checkbox" class="h-4 w-4 border-border text-link focus:ring-link">
+                          <label for="remember-me2" class="ml-3 block text-sm font-medium leading-6 text-highEmphasis">Remember me</label>
+                        </div>
+            
+                        <div class="text-sm leading-6">
+                          <a href="#" class="font-medium text-link hover:text-linkHover hover:underline outline-focusRing">Forgot password?</a>
+                        </div>
+                      </div>
+
+                      <!-- Button -->
+                      <div>
+                        <button type="submit" class="flex w-full justify-center bg-link px-3 py-2 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive">Sign in</button>
+                      </div>
+                    </form>
+
+                    <p class="mt-10 text-center text-sm text-gray-500">
+                      Doesn't have an account?
+                      <a href="#" class="font-medium leading-6 text-link hover:text-linkHover hover:underline outline-focusRing">Register now</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+<pre><code class="language-html">&lt;!-- Requires a container with bg-gray-50 --&gt;
+&lt;div class=&quot;bg-gray-50&quot;&gt;
+  &lt;div class=&quot;flex min-h-full flex-col justify-center py-12&quot;&gt;
+    &lt;div class=&quot;sm:mx-auto sm:w-full sm:max-w-sm&quot;&gt;
+      &lt;img class=&quot;mx-auto h-10 w-auto mix-blend-darken&quot; src=&quot;dist/img/aspin-logo.png&quot; alt=&quot;Aspin Management Systems Ltd.&quot;&gt;
+      &lt;h2 class=&quot;mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-highEmphasis&quot;&gt;Sign in to your account&lt;/h2&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;mt-10 sm:mx-auto sm:w-full sm:max-w-[480px]&quot;&gt;
+      &lt;div class=&quot;bg-white px-6 py-10 shadow sm:rounded-sm sm:px-10&quot;&gt;
+        &lt;form class=&quot;space-y-6&quot; action=&quot;#&quot; method=&quot;POST&quot;&gt;
+          &lt;!-- Input text --&gt;
+          &lt;div&gt;
+            &lt;label for=&quot;email2&quot; class=&quot;block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Email address&lt;/label&gt;
+            &lt;div class=&quot;mt-2&quot;&gt;
+              &lt;input type=&quot;email&quot; name=&quot;email2&quot; id=&quot;email2&quot; autocomplete=&quot;email&quot; required class=&quot;block w-full border-0 py-1.5 text-highEmphasis ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-focusRing sm:text-sm sm:leading-6&quot;&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;!-- Input text --&gt;
+          &lt;div&gt;
+            &lt;label for=&quot;password2&quot; class=&quot;block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Password&lt;/label&gt;
+            &lt;div class=&quot;mt-2&quot;&gt;
+              &lt;input type=&quot;password&quot; name=&quot;password2&quot; id=&quot;password2&quot; autocomplete=&quot;current-password&quot; required class=&quot;block w-full border-0 py-1.5 text-highEmphasis ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-focusRing sm:text-sm sm:leading-6&quot;&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;flex items-center justify-between&quot;&gt;
+            &lt;!-- Checkbox --&gt;
+            &lt;div class=&quot;flex items-center&quot;&gt;
+              &lt;input id=&quot;remember-me2&quot; name=&quot;remember-me2&quot; type=&quot;checkbox&quot; class=&quot;h-4 w-4 border-border text-link focus:ring-link&quot;&gt;
+              &lt;label for=&quot;remember-me2&quot; class=&quot;ml-3 block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Remember me&lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;text-sm leading-6&quot;&gt;
+              &lt;a href=&quot;#&quot; class=&quot;font-medium text-link hover:text-linkHover hover:underline outline-focusRing&quot;&gt;Forgot password?&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;!-- Button --&gt;
+          &lt;div&gt;
+            &lt;button type=&quot;submit&quot; class=&quot;flex w-full justify-center bg-link px-3 py-2 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive&quot;&gt;Sign in&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/form&gt;
+        
+        &lt;p class=&quot;mt-10 text-center text-sm text-gray-500&quot;&gt;
+          Doesn't have an account?
+          &lt;a href=&quot;#&quot; class=&quot;font-medium leading-6 text-link hover:text-linkHover hover:underline outline-focusRing&quot;&gt;Register now&lt;/a&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+          <h2 class="text-xl font-medium mt-8">Vue code</h2>
+          <p class="text-highEmphasis mt-4">For the Vue code, visit the <a href="https://tailwindui.com/components/application-ui/forms/sign-in-forms" class="text-link hover:underline" target="_blank">Tailwind UI sign-in and registration page</a>.</p>
+
+        </div><!-- Ends container -->
+      </div>
+    </main>
+  </div>
+
+  <script src="dist/nav.js"></script>
+</body>
+</html>
