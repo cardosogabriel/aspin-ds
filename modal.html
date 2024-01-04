@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-white">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal</title>
+  <link href="dist/styles.css" rel="stylesheet">
+  <link href="dist/fontawesome/all.min.css" rel="stylesheet">
+  <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
+  <link href="dist/prism/prism.css" rel="stylesheet">
+  <script src="dist/prism/prism.js"></script>
+  <link rel="icon" type="image/png" href="https://demo.intersell.cloud/graphics/templates/aspin_demo/favicons/favicon-16x16.png">
+</head>
+<body class="h-full">
+
+  <div>
+    <!-- Sidebar code -->
+    <div id="sidebarContainer"></div>
+
+    <main class="py-10 lg:pl-72">
+      <div class="px-4 sm:px-6 lg:px-8">
+
+        <!-- Content -->
+
+        <div class="container mx-auto max-w-5xl">
+          <h1 class="text-4xl font-bold">
+            Modal
+          </h1>
+          <p class="mt-4 text-slate-500">Modal comes with default type, or with heading and footer. It has three sizes: small, medium, and large.</p>
+      
+          <h2 class="mt-8 text-xl">Default, size SM</h2>
+          <div class="my-8">
+
+            <!-- Added h-96 -->
+            <div class="relative z-10 h-96" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+              <!-- Replaced fixed by absolute -->
+              <div class="absolute inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+              <!-- Replaced fixed by absolute, deleted w-screen -->
+              <div class="absolute inset-0 z-10 overflow-y-auto">
+                <div class="flex min-h-full items-end justify-center p-4 sm:items-center sm:p-0">
+                  <div class="relative transform overflow-hidden rounded-sm bg-white px-4 pb-4 pt-5 text-left shadow-lg transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6">
+                    <h3 class="text-base font-semibold leading-6 text-highEmphasis" id="modal-title">Modal title</h3>
+                    <div class="mt-2 text-sm text-mediumEmphasis">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatibus corrupti atque repudiandae nam.</p>
+                    </div>
+                    <div class="mt-5 sm:mt-4 sm:flex sm:flex-row-reverse">
+                      <!-- Button -->
+                      <button type="button" class="inline-flex w-full justify-center bg-link px-3 py-2 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive sm:ml-3 sm:w-auto">Change plan</button>
+                      <button type="button" class="mt-3 inline-flex w-full justify-center px-3 py-2 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400 sm:mt-0 sm:w-auto">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+<pre><code class="language-html">&lt;div class=&quot;relative z-10&quot; aria-labelledby=&quot;modal-title&quot; role=&quot;dialog&quot; aria-modal=&quot;true&quot;&gt;
+  &lt;div class=&quot;fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity&quot;&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;fixed inset-0 z-10 w-screen overflow-y-auto&quot;&gt;
+    &lt;div class=&quot;flex min-h-full items-end justify-center p-4 sm:items-center sm:p-0&quot;&gt;
+      &lt;div class=&quot;relative transform overflow-hidden rounded-sm bg-white px-4 pb-4 pt-5 text-left shadow-lg transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6&quot;&gt;
+        &lt;h3 class=&quot;text-base font-semibold leading-6 text-highEmphasis&quot; id=&quot;modal-title&quot;&gt;Modal title&lt;/h3&gt;
+        &lt;div class=&quot;mt-2 text-sm text-mediumEmphasis&quot;&gt;
+          &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatibus corrupti atque repudiandae nam.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;mt-5 sm:mt-4 sm:flex sm:flex-row-reverse&quot;&gt;
+          &lt;!-- Button --&gt;
+          &lt;button type=&quot;button&quot; class=&quot;inline-flex w-full justify-center bg-link px-3 py-2 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive sm:ml-3 sm:w-auto&quot;&gt;Change plan&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;mt-3 inline-flex w-full justify-center px-3 py-2 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400 sm:mt-0 sm:w-auto&quot;&gt;Cancel&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+          <h2 class="mt-8 text-xl">With header and footer, size SM</h2>
+          <div class="my-8">
+
+            <!-- Added h-96 -->
+            <div class="relative z-10 h-96" aria-labelledby="modal-title2" role="dialog" aria-modal="true">
+              <!-- Replaced fixed by absolute -->
+              <div class="absolute inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+              <!-- Replaced fixed by absolute, deleted w-screen -->
+              <div class="absolute inset-0 z-10 overflow-y-auto">
+                <div class="flex min-h-full items-end justify-center p-4 sm:items-center sm:p-0">
+                  <div class="relative transform overflow-hidden rounded-sm bg-white text-left shadow-lg transition-all sm:my-8 sm:w-full sm:max-w-sm">
+                    <div class="relative p-4 pr-12 border-b border-gray-200 sm:pl-6 sm:pr-12">
+                      <div class="absolute right-0 top-0 pr-4 pt-4">
+                        <button type="button" class="h-6 w-6 bg-white text-gray-500 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-focusRing focus:ring-offset-2">
+                          <span class="sr-only">Close</span>
+                          <i class="h-6 w-6 far fa-times inset-y-0 right-0 flex items-center"></i>
+                        </button>
+                      </div>
+                      <h3 class="text-base font-semibold leading-6 text-highEmphasis" id="modal-title2">Modal title</h3>
+                    </div>
+    
+                    <div class="px-4 py-6 sm:px-6 border-b border-gray-200">
+                      <div class="text-sm text-mediumEmphasis">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatibus corrupti atque repudiandae nam.</p>
+                      </div>
+                    </div>
+
+                    <div class="p-4 sm:px-6">
+                      <div class="sm:flex sm:flex-row-reverse">
+                        <!-- Button -->
+                        <button type="button" class="inline-flex w-full justify-center bg-link px-3 py-2 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive sm:ml-3 sm:w-auto">Change plan</button>
+                        <button type="button" class="mt-3 inline-flex w-full justify-center px-3 py-2 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400 sm:mt-0 sm:w-auto">Cancel</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+<pre><code class="language-html">&lt;div class=&quot;relative z-10&quot; aria-labelledby=&quot;modal-title2&quot; role=&quot;dialog&quot; aria-modal=&quot;true&quot;&gt;
+  &lt;div class=&quot;fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;fixed inset-0 z-10 w-screen overflow-y-auto&quot;&gt;
+    &lt;div class=&quot;flex min-h-full items-end justify-center p-4 sm:items-center sm:p-0&quot;&gt;
+      &lt;div class=&quot;relative transform overflow-hidden rounded-sm bg-white text-left shadow-lg transition-all sm:my-8 sm:w-full sm:max-w-sm&quot;&gt;
+        &lt;div class=&quot;relative p-4 pr-12 border-b border-gray-200 sm:pl-6 sm:pr-12&quot;&gt;
+          &lt;div class=&quot;absolute right-0 top-0 pr-4 pt-4&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;h-6 w-6 bg-white text-gray-500 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-focusRing focus:ring-offset-2&quot;&gt;
+              &lt;span class=&quot;sr-only&quot;&gt;Close&lt;/span&gt;
+              &lt;i class=&quot;h-6 w-6 far fa-times inset-y-0 right-0 flex items-center&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+          &lt;/div&gt;
+          &lt;h3 class=&quot;text-base font-semibold leading-6 text-highEmphasis&quot; id=&quot;modal-title2&quot;&gt;Modal title&lt;/h3&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;px-4 py-6 sm:px-6 border-b border-gray-200&quot;&gt;
+          &lt;div class=&quot;text-sm text-mediumEmphasis&quot;&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatibus corrupti atque repudiandae nam.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;p-4 sm:px-6&quot;&gt;
+          &lt;div class=&quot;sm:flex sm:flex-row-reverse&quot;&gt;
+            &lt;!-- Button --&gt;
+            &lt;button type=&quot;button&quot; class=&quot;inline-flex w-full justify-center bg-link px-3 py-2 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive sm:ml-3 sm:w-auto&quot;&gt;Change plan&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;mt-3 inline-flex w-full justify-center px-3 py-2 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400 sm:mt-0 sm:w-auto&quot;&gt;Cancel&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+          <h2 class="mt-8 text-xl">Size MD</h2>
+          <div class="my-8">
+
+            <!-- Added h-96 -->
+            <div class="relative z-10 h-96" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+              <!-- Replaced fixed by absolute -->
+              <div class="absolute inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+              <!-- Replaced fixed by absolute, deleted w-screen -->
+              <div class="absolute inset-0 z-10 overflow-y-auto">
+                <div class="flex min-h-full items-end justify-center p-4 sm:items-center sm:p-0">
+                  <div class="relative transform overflow-hidden rounded-sm bg-white px-4 pb-4 pt-5 text-left shadow-lg transition-all sm:my-8 sm:w-full sm:max-w-xl sm:p-6">
+                    <h3 class="text-base font-semibold leading-6 text-highEmphasis" id="modal-title">Modal title</h3>
+                    <div class="mt-2 text-sm text-mediumEmphasis">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatibus corrupti atque repudiandae nam.</p>
+                    </div>
+                    <div class="mt-5 sm:mt-4 sm:flex sm:flex-row-reverse">
+                      <!-- Button -->
+                      <button type="button" class="inline-flex w-full justify-center bg-link px-3 py-2 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive sm:ml-3 sm:w-auto">Change plan</button>
+                      <button type="button" class="mt-3 inline-flex w-full justify-center px-3 py-2 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400 sm:mt-0 sm:w-auto">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+<pre><code class="language-html">&lt;div class=&quot;relative z-10&quot; aria-labelledby=&quot;modal-title2&quot; role=&quot;dialog&quot; aria-modal=&quot;true&quot;&gt;
+  &lt;div class=&quot;fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;fixed inset-0 z-10 w-screen overflow-y-auto&quot;&gt;
+    &lt;div class=&quot;flex min-h-full items-end justify-center p-4 sm:items-center sm:p-0&quot;&gt;
+      &lt;div class=&quot;relative transform overflow-hidden rounded-sm bg-white text-left shadow-lg transition-all sm:my-8 sm:w-full sm:max-w-xl&quot;&gt;
+        &lt;div class=&quot;relative p-4 pr-12 border-b border-gray-200 sm:pl-6 sm:pr-12&quot;&gt;
+          &lt;div class=&quot;absolute right-0 top-0 pr-4 pt-4&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;h-6 w-6 bg-white text-gray-500 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-focusRing focus:ring-offset-2&quot;&gt;
+              &lt;span class=&quot;sr-only&quot;&gt;Close&lt;/span&gt;
+              &lt;i class=&quot;h-6 w-6 far fa-times inset-y-0 right-0 flex items-center&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+          &lt;/div&gt;
+          &lt;h3 class=&quot;text-base font-semibold leading-6 text-highEmphasis&quot; id=&quot;modal-title2&quot;&gt;Modal title&lt;/h3&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;px-4 py-6 sm:px-6 border-b border-gray-200&quot;&gt;
+          &lt;div class=&quot;text-sm text-mediumEmphasis&quot;&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatibus corrupti atque repudiandae nam.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;p-4 sm:px-6&quot;&gt;
+          &lt;div class=&quot;sm:flex sm:flex-row-reverse&quot;&gt;
+            &lt;!-- Button --&gt;
+            &lt;button type=&quot;button&quot; class=&quot;inline-flex w-full justify-center bg-link px-3 py-2 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive sm:ml-3 sm:w-auto&quot;&gt;Change plan&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;mt-3 inline-flex w-full justify-center px-3 py-2 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400 sm:mt-0 sm:w-auto&quot;&gt;Cancel&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+          
+          <h2 class="mt-8 text-xl">Size LG</h2>
+          <div class="my-8">
+
+            <!-- Added h-96 -->
+            <div class="relative z-10 h-96" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+              <!-- Replaced fixed by absolute -->
+              <div class="absolute inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+              <!-- Replaced fixed by absolute, deleted w-screen -->
+              <div class="absolute inset-0 z-10 overflow-y-auto">
+                <div class="flex min-h-full items-end justify-center p-4 sm:items-center sm:p-0">
+                  <div class="relative transform overflow-hidden rounded-sm bg-white px-4 pb-4 pt-5 text-left shadow-lg transition-all sm:my-8 sm:w-full sm:max-w-4xl sm:p-6">
+                    <h3 class="text-base font-semibold leading-6 text-highEmphasis" id="modal-title">Modal title</h3>
+                    <div class="mt-2 text-sm text-mediumEmphasis">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatibus corrupti atque repudiandae nam.</p>
+                    </div>
+                    <div class="mt-5 sm:mt-4 sm:flex sm:flex-row-reverse">
+                      <!-- Button -->
+                      <button type="button" class="inline-flex w-full justify-center bg-link px-3 py-2 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive sm:ml-3 sm:w-auto">Change plan</button>
+                      <button type="button" class="mt-3 inline-flex w-full justify-center px-3 py-2 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400 sm:mt-0 sm:w-auto">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+<pre><code class="language-html">&lt;div class=&quot;relative z-10&quot; aria-labelledby=&quot;modal-title2&quot; role=&quot;dialog&quot; aria-modal=&quot;true&quot;&gt;
+  &lt;div class=&quot;fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;fixed inset-0 z-10 w-screen overflow-y-auto&quot;&gt;
+    &lt;div class=&quot;flex min-h-full items-end justify-center p-4 sm:items-center sm:p-0&quot;&gt;
+      &lt;div class=&quot;relative transform overflow-hidden rounded-sm bg-white text-left shadow-lg transition-all sm:my-8 sm:w-full sm:max-w-4xl&quot;&gt;
+        &lt;div class=&quot;relative p-4 pr-12 border-b border-gray-200 sm:pl-6 sm:pr-12&quot;&gt;
+          &lt;div class=&quot;absolute right-0 top-0 pr-4 pt-4&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;h-6 w-6 bg-white text-gray-500 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-focusRing focus:ring-offset-2&quot;&gt;
+              &lt;span class=&quot;sr-only&quot;&gt;Close&lt;/span&gt;
+              &lt;i class=&quot;h-6 w-6 far fa-times inset-y-0 right-0 flex items-center&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+          &lt;/div&gt;
+          &lt;h3 class=&quot;text-base font-semibold leading-6 text-highEmphasis&quot; id=&quot;modal-title2&quot;&gt;Modal title&lt;/h3&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;px-4 py-6 sm:px-6 border-b border-gray-200&quot;&gt;
+          &lt;div class=&quot;text-sm text-mediumEmphasis&quot;&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatibus corrupti atque repudiandae nam.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;p-4 sm:px-6&quot;&gt;
+          &lt;div class=&quot;sm:flex sm:flex-row-reverse&quot;&gt;
+            &lt;!-- Button --&gt;
+            &lt;button type=&quot;button&quot; class=&quot;inline-flex w-full justify-center bg-link px-3 py-2 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive sm:ml-3 sm:w-auto&quot;&gt;Change plan&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;mt-3 inline-flex w-full justify-center px-3 py-2 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400 sm:mt-0 sm:w-auto&quot;&gt;Cancel&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+          
+
+
+          <h2 class="text-xl font-medium mt-8">Vue code</h2>
+          <p class="text-highEmphasis mt-4">For the Vue code, visit the <a href="https://tailwindui.com/components/application-ui/overlays/modals" class="text-link hover:underline" target="_blank">Tailwind UI modals page</a>.</p>
+
+        </div><!-- Ends container -->
+      </div>
+    </main>
+  </div>
+
+  <script src="dist/nav.js"></script>
+</body>
+</html>
