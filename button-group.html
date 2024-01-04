@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-white">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Group</title>
+  <link href="dist/styles.css" rel="stylesheet">
+  <link href="dist/fontawesome/all.min.css" rel="stylesheet">
+  <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
+  <link href="dist/prism/prism.css" rel="stylesheet">
+  <script src="dist/prism/prism.js"></script>
+  <link rel="icon" type="image/png" href="https://demo.intersell.cloud/graphics/templates/aspin_demo/favicons/favicon-16x16.png">
+</head>
+<body class="h-full">
+
+  <div>
+    <!-- Sidebar code -->
+    <div id="sidebarContainer"></div>
+
+    <main class="py-10 lg:pl-72">
+      <div class="px-4 sm:px-6 lg:px-8">
+
+        <!-- Content -->
+
+        <div class="container mx-auto max-w-5xl">
+          <h1 class="text-4xl font-bold">
+            Button Group
+          </h1>
+          <p class="mt-4 text-slate-500">Button groups support buttons and button icons, in small and default sizes.</p>
+      
+          <h2 class="mt-8 text-xl">Default</h2>
+          <div class="my-8">
+
+            <span class="isolate inline-flex">
+              <button type="button" class="relative inline-flex items-center px-3 py-2 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400">Years</button>
+              <button type="button" class="-ml-px relative inline-flex items-center px-3 py-2 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400">Months</button>
+              <button type="button" class="-ml-px relative inline-flex items-center px-3 py-2 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400">Days</button>
+            </span>
+
+          </div>
+<pre><code class="language-html">&lt;span class=&quot;isolate inline-flex&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;relative inline-flex items-center px-3 py-2 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400&quot;&gt;Years&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;-ml-px relative inline-flex items-center px-3 py-2 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400&quot;&gt;Months&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;-ml-px relative inline-flex items-center px-3 py-2 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400&quot;&gt;Days&lt;/button&gt;
+&lt;/span&gt;
+</code></pre>
+
+          <h2 class="mt-8 text-xl">Small</h2>
+          <div class="my-8">
+
+            <span class="isolate inline-flex">
+              <button type="button" class="relative inline-flex items-center px-2 py-1 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400">Years</button>
+              <button type="button" class="-ml-px relative inline-flex items-center px-2 py-1 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400">Months</button>
+              <button type="button" class="-ml-px relative inline-flex items-center px-2 py-1 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400">Days</button>
+            </span>
+
+          </div>
+<pre><code class="language-html">&lt;span class=&quot;isolate inline-flex&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;relative inline-flex items-center px-2 py-1 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400&quot;&gt;Years&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;-ml-px relative inline-flex items-center px-2 py-1 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400&quot;&gt;Months&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;-ml-px relative inline-flex items-center px-2 py-1 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400&quot;&gt;Days&lt;/button&gt;
+&lt;/span&gt;
+</code></pre>
+
+          <h2 class="mt-8 text-xl">With Button Icon</h2>
+          <div class="my-8">
+
+            <span class="isolate inline-flex">
+              <button type="button" class="relative inline-flex items-center px-3 py-2.5 text-highEmphasis leading-4 ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400"><i class="far fa-chevron-left text-base w-4"></i></button>
+              <button type="button" class="-ml-px relative inline-flex items-center px-3 py-2 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400">Months</button>
+              <button type="button" class="-ml-px relative inline-flex items-center px-3 py-2.5 text-highEmphasis leading-4 ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400"><i class="far fa-chevron-right text-base w-4"></i></button>
+            </span>
+
+          </div>
+<pre><code class="language-html">&lt;span class=&quot;isolate inline-flex&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;relative inline-flex items-center px-3 py-2.5 text-highEmphasis leading-4 ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400&quot;&gt;&lt;i class=&quot;far fa-chevron-left text-base w-4&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;-ml-px relative inline-flex items-center px-3 py-2 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400&quot;&gt;Months&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;-ml-px relative inline-flex items-center px-3 py-2.5 text-highEmphasis leading-4 ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400&quot;&gt;&lt;i class=&quot;far fa-chevron-right text-base w-4&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/span&gt;
+</code></pre>
+
+          <h2 class="mt-8 text-xl">With Button Icon Small</h2>
+          <div class="my-8">
+
+            <span class="isolate inline-flex">
+              <button type="button" class="relative inline-flex items-center px-2 py-1.5 text-highEmphasis leading-4 ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400"><i class="far fa-chevron-left text-base w-4"></i></button>
+              <button type="button" class="-ml-px relative inline-flex items-center px-2 py-1.5 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400">Months</button>
+              <button type="button" class="-ml-px relative inline-flex items-center px-2 py-1.5 text-highEmphasis leading-4 ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400"><i class="far fa-chevron-right text-base w-4"></i></button>
+            </span>
+
+          </div>
+<pre><code class="language-html">&lt;span class=&quot;isolate inline-flex&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;relative inline-flex items-center px-2 py-1.5 text-highEmphasis leading-4 ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400&quot;&gt;&lt;i class=&quot;far fa-chevron-left text-base w-4&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;-ml-px relative inline-flex items-center px-2 py-1.5 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400&quot;&gt;Months&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;-ml-px relative inline-flex items-center px-2 py-1.5 text-highEmphasis leading-4 ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400&quot;&gt;&lt;i class=&quot;far fa-chevron-right text-base w-4&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/span&gt;
+</code></pre>
+
+          <h2 class="text-xl font-medium mt-8">Vue code</h2>
+          <p class="text-highEmphasis mt-4">For the Vue code, visit the <a href="https://tailwindui.com/components/application-ui/elements/button-groups" class="text-link hover:underline" target="_blank">Tailwind UI buttons groups page</a>.</p>
+
+        </div><!-- Ends container -->
+      </div>
+    </main>
+  </div>
+
+  <script src="dist/nav.js"></script>
+</body>
+</html>

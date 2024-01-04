@@ -72,7 +72,7 @@
             </div>
            
           </div>
-<pre><code class="language-html">&lt;div class=&quot;relative inline-block text-left ml-28 pl-5&quot;&gt;
+<pre><code class="language-html">&lt;div class=&quot;relative inline-block text-left&quot;&gt;
   &lt;div&gt;
     &lt;!-- Button --&gt;
     &lt;button type=&quot;button&quot; class=&quot;inline-flex w-full justify-center items-center gap-x-1.5 px-3 py-2 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400&quot; id=&quot;menu-button&quot; aria-expanded=&quot;true&quot; aria-haspopup=&quot;true&quot;&gt;
@@ -111,6 +111,90 @@
   &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
+
+          <h2 class="mt-8 text-xl">With Button Small</h2>
+          <div class="my-8">
+
+            <div class="relative inline-block text-left">
+              <div>
+                <!-- Button -->
+                <button type="button" class="inline-flex w-full justify-center items-center gap-x-1.5 px-2 py-1 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400" id="menu-button1" aria-expanded="true" aria-haspopup="true">
+                  Options
+                  <span class="-mr-1 w-4 h-4 flex items-center">
+                    <i class="far fa-chevron-down text-mediumEmphasis"></i>
+                  </span>
+                </button>
+              </div>
+            
+              <!-- 
+                Dropdown menu, show/hide based on menu state.
+            
+                Entering: "transition ease-out duration-100"
+                  From: "transform opacity-0 scale-95"
+                  To: "transform opacity-100 scale-100"
+                Leaving: "transition ease-in duration-75"
+                  From: "transform opacity-100 scale-100"
+                  To: "transform opacity-0 scale-95"
+              -->
+              <div class="hidden absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-200 bg-white shadow-md ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm" role="menu" aria-orientation="vertical" aria-labelledby="menu-button1" tabindex="-1">
+                <div class="px-3 py-3" role="none">
+                  <p class="text-sm text-mediumEmphasis" role="none">Tom Holland</p>
+                  <p class="truncate text-sm text-highEmphasis" role="none">tom@example.com</p>
+                </div>
+                <div class="py-1" role="none">
+                  <a href="#" class="text-highEmphasis block px-3 py-2 text-sm hover:bg-gray-100 active:bg-gray-100" role="menuitem" tabindex="-1" id="menu-item-4">Account settings</a>
+                  <a href="#" class="text-highEmphasis block px-3 py-2 text-sm hover:bg-gray-100 active:bg-gray-100" role="menuitem" tabindex="-1" id="menu-item-5">Support</a>
+                  <a href="#" class="text-highEmphasis block px-3 py-2 text-sm hover:bg-gray-100 active:bg-gray-100" role="menuitem" tabindex="-1" id="menu-item-6">License</a>
+                </div>
+                <div class="py-1" role="none">
+                  <form method="POST" action="#" role="none">
+                    <button type="submit" class="text-highEmphasis block w-full px-3 py-2 text-left text-sm hover:bg-gray-100 active:bg-gray-50" role="menuitem" tabindex="-1" id="menu-item-7">Sign out</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+ 
+          </div>
+<pre><code class="language-html">&lt;div class=&quot;relative inline-block text-left&quot;&gt;
+  &lt;div&gt;
+    &lt;!-- Button --&gt;
+    &lt;button type=&quot;button&quot; class=&quot;inline-flex w-full justify-center items-center gap-x-1.5 px-2 py-1 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400&quot; id=&quot;menu-button1&quot; aria-expanded=&quot;true&quot; aria-haspopup=&quot;true&quot;&gt;
+      Options
+      &lt;span class=&quot;-mr-1 w-4 h-4 flex items-center&quot;&gt;
+        &lt;i class=&quot;far fa-chevron-down text-mediumEmphasis&quot;&gt;&lt;/i&gt;
+      &lt;/span&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;!-- 
+    Dropdown menu, show/hide based on menu state.
+
+    Entering: &quot;transition ease-out duration-100&quot;
+      From: &quot;transform opacity-0 scale-95&quot;
+      To: &quot;transform opacity-100 scale-100&quot;
+    Leaving: &quot;transition ease-in duration-75&quot;
+      From: &quot;transform opacity-100 scale-100&quot;
+      To: &quot;transform opacity-0 scale-95&quot;
+  --&gt;
+  &lt;div class=&quot;hidden absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-200 bg-white shadow-md ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm&quot; role=&quot;menu&quot; aria-orientation=&quot;vertical&quot; aria-labelledby=&quot;menu-button1&quot; tabindex=&quot;-1&quot;&gt;
+    &lt;div class=&quot;px-3 py-3&quot; role=&quot;none&quot;&gt;
+      &lt;p class=&quot;text-sm text-mediumEmphasis&quot; role=&quot;none&quot;&gt;Tom Holland&lt;/p&gt;
+      &lt;p class=&quot;truncate text-sm text-highEmphasis&quot; role=&quot;none&quot;&gt;tom@example.com&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;py-1&quot; role=&quot;none&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;text-highEmphasis block px-3 py-2 text-sm hover:bg-gray-100 active:bg-gray-100&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot; id=&quot;menu-item-4&quot;&gt;Account settings&lt;/a&gt;
+      &lt;a href=&quot;#&quot; class=&quot;text-highEmphasis block px-3 py-2 text-sm hover:bg-gray-100 active:bg-gray-100&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot; id=&quot;menu-item-5&quot;&gt;Support&lt;/a&gt;
+      &lt;a href=&quot;#&quot; class=&quot;text-highEmphasis block px-3 py-2 text-sm hover:bg-gray-100 active:bg-gray-100&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot; id=&quot;menu-item-6&quot;&gt;License&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;py-1&quot; role=&quot;none&quot;&gt;
+      &lt;form method=&quot;POST&quot; action=&quot;#&quot; role=&quot;none&quot;&gt;
+        &lt;button type=&quot;submit&quot; class=&quot;text-highEmphasis block w-full px-3 py-2 text-left text-sm hover:bg-gray-100 active:bg-gray-50&quot; role=&quot;menuitem&quot; tabindex=&quot;-1&quot; id=&quot;menu-item-7&quot;&gt;Sign out&lt;/button&gt;
+      &lt;/form&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
 
           <h2 class="text-xl font-medium mt-8">Vue code</h2>
           <p class="text-highEmphasis mt-4">For the Vue code, visit the <a href="https://tailwindui.com/components/application-ui/elements/dropdowns" class="text-link hover:underline" target="_blank">Tailwind UI dropdowns page</a>.</p>

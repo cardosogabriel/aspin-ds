@@ -1193,6 +1193,10 @@ select {
   top: 0px;
 }
 
+.isolate {
+  isolation: isolate;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -1354,6 +1358,10 @@ select {
 
 .mb-64 {
   margin-bottom: 16rem;
+}
+
+.-ml-px {
+  margin-left: -1px;
 }
 
 .block {
@@ -1791,6 +1799,11 @@ select {
 .rounded-s-lg {
   border-start-start-radius: 0.5rem;
   border-end-start-radius: 0.5rem;
+}
+
+.rounded-l-md {
+  border-top-left-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
 }
 
 .border {
@@ -2715,6 +2728,10 @@ select {
 .hover\:ring-red-700:hover {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(200 30 30 / var(--tw-ring-opacity));
+}
+
+.focus\:z-10:focus {
+  z-index: 10;
 }
 
 .focus\:border-indigo-500:focus {
