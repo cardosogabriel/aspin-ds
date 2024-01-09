@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Input Text</title>
   <link href="dist/styles.css" rel="stylesheet">
-  <link href="dist/fontawesome/all.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6cb3dcd5fc.js" crossorigin="anonymous"></script>
   <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
   <link href="dist/prism/prism.css" rel="stylesheet">
   <script src="dist/prism/prism.js"></script>
@@ -57,7 +57,7 @@
                 <div class="relative mt-2">
                   <input type="text" name="text-error" id="text-error" value="Input text" class="block w-full border-0 py-1.5 text-red-900 ring-1 ring-inset ring-red-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6" placeholder="Placeholder">
                   <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
-                    <i class="fa fa-exclamation-circle text-red-500"></i>
+                    <i class="fa-sharp fa-solid fa-circle-exclamation text-red-500"></i>
                   </div>  
                 </div>
                 <p class="mt-2 text-sm text-red-600">Error text comes here.</p>
@@ -69,7 +69,7 @@
   &lt;div class=&quot;relative mt-2&quot;&gt;
     &lt;input type=&quot;text&quot; name=&quot;text-error&quot; id=&quot;text-error&quot; class=&quot;block w-full border-0 py-1.5 text-red-900 ring-1 ring-inset ring-red-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6&quot; placeholder=&quot;Placeholder&quot;&gt;
     &lt;div class=&quot;pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3&quot;&gt;
-      &lt;i class=&quot;fa fa-exclamation-circle text-red-500&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;fa-sharp fa-solid fa-circle-exclamation text-red-500&quot;&gt;&lt;/i&gt;
     &lt;/div&gt;  
   &lt;/div&gt;
   &lt;p class=&quot;mt-2 text-sm text-red-600&quot;&gt;Error text comes here.&lt;/p&gt;
@@ -88,15 +88,12 @@
   
             </div>
 <pre><code class="language-html">&lt;div&gt;
-  &lt;label for=&quot;text-error&quot; class=&quot;block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Input label&lt;/label&gt;
-  &lt;div class=&quot;relative mt-2&quot;&gt;
-    &lt;input type=&quot;text&quot; name=&quot;text-error&quot; id=&quot;text-error&quot; class=&quot;block w-full border-0 py-1.5 text-red-900 ring-1 ring-inset ring-red-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6&quot; placeholder=&quot;Placeholder&quot;&gt;
-    &lt;div class=&quot;pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3&quot;&gt;
-      &lt;i class=&quot;fa fa-exclamation-circle text-red-500&quot;&gt;&lt;/i&gt;
-    &lt;/div&gt;  
+  &lt;label for=&quot;text-disabled&quot; class=&quot;block text-sm font-medium leading-6 text-highEmphasis&quot;&gt;Input label&lt;/label&gt;
+  &lt;div class=&quot;mt-2&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;text-disabled&quot; id=&quot;text-disabled&quot; value=&quot;Input text&quot; disabled class=&quot;block w-full border-0 py-1.5 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 disabled:cursor-not-allowed disabled:bg-gray-50 disabled:text-mediumEmphasis disabled:ring-gray-200 sm:text-sm sm:leading-6&quot; placeholder=&quot;Placeholder&quot;&gt;
   &lt;/div&gt;
-  &lt;p class=&quot;mt-2 text-sm text-red-600&quot;&gt;Error text comes here.&lt;/p&gt;
 &lt;/div&gt;
+
 </code></pre>
 
 

@@ -5,11 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Button</title>
   <link href="dist/styles.css" rel="stylesheet">
-  <link href="dist/fontawesome/all.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6cb3dcd5fc.js" crossorigin="anonymous"></script>
   <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
   <link href="dist/prism/prism.css" rel="stylesheet">
   <script src="dist/prism/prism.js"></script>
-  <!-- <script src="https://kit.fontawesome.com/6cb3dcd5fc.js"crossorigin="anonymous"></script> -->
   <link rel="icon" type="image/png" href="https://demo.intersell.cloud/graphics/templates/aspin_demo/favicons/favicon-16x16.png">
 </head>
 <body class="h-full">
@@ -31,9 +30,11 @@
       
           <h2 class="mt-8 text-xl">Button Primary</h2>
           <div class="my-8 space-x-4">
+
             <button type="button" class="bg-link px-2 py-1 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive">Button text</button>
             <button type="button" class="bg-link px-3 py-2 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive">Button text</button>
             <button type="button" class="bg-link px-4 py-3 text-base font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive">Button text</button>
+
           </div>
 <pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;bg-link px-2 py-1 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive&quot;&gt;Button text&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;bg-link px-3 py-2 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive&quot;&gt;Button text&lt;/button&gt;
@@ -41,9 +42,11 @@
       
           <h2 class="mt-8 text-lg">Button Secondary</h2>
           <div class="my-8 space-x-4">
+
             <button type="button" class="px-2 py-1 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400">Button text</button>
             <button type="button" class="px-3 py-2 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400">Button text</button>
             <button type="button" class="px-4 py-3 text-base text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400">Button text</button>
+
           </div>
 <pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;px-2 py-1 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400&quot;&gt;Button text&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;px-3 py-2 text-sm font-medium text-highEmphasis ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400&quot;&gt;Button text&lt;/button&gt;
@@ -51,40 +54,51 @@
       
           <h2 class="mt-8 text-xl">Button Danger</h2>
           <div class="my-8 space-x-4">
-            <button type="button" class="px-3 py-2 text-sm font-medium text-red-900 ring-1 ring-inset ring-red-500 hover:bg-red-700 hover:ring-red-700 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-red-500 active:bg-red-800 active:ring-red-800">Button text</button>
+
+            <button type="button" class="px-3 py-2 text-sm font-medium text-red-900 ring-1 ring-inset ring-red-500 hover:bg-red-700 hover:ring-red-700 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-red-500 active:text-white active:bg-red-800 active:ring-red-800">Button text</button>
+
           </div>
 <pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;px-3 py-2 text-sm font-medium text-red-900 ring-1 ring-inset ring-red-500 hover:bg-red-700 hover:ring-red-700 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-red-500 active:bg-red-800 active:ring-red-800&quot;&gt;Button text&lt;/button&gt;
 </code></pre>
 
           <h2 class="mt-8 text-lg">Button with Leading Icon</h2>
           <div class="my-8 space-x-4">
-            <button type="button" class="bg-link px-2 py-1 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive"><i class="far fa-plus text-base mr-2"></i>Button text</button>
-            <button type="button" class="bg-link px-3 py-2 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive"><i class="far fa-plus text-base mr-2"></i>Button text</button>
-            <button type="button" class="bg-link px-4 py-3 text-base font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive"><i class="far fa-plus text-base mr-2"></i>Button text</button>
+
+            <button type="button" class="bg-link px-2 py-1 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive"><i class="fa-sharp fa-solid fa-plus text-base w-4 mr-2"></i>Button text</button>
+            <button type="button" class="bg-link px-3 py-2 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive"><i class="fa-sharp fa-solid fa-plus text-base w-4 mr-2"></i>Button text</button>
+            <button type="button" class="bg-link px-4 py-3 text-base font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive"><i class="fa-sharp fa-solid fa-plus text-base w-4 mr-2"></i>Button text</button>
+          
           </div>
-<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;bg-link px-2 py-1 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive&quot;&gt;&lt;i class=&quot;far fa-plus text-base mr-2&quot;&gt;&lt;/i&gt;Button text&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;bg-link px-3 py-2 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive&quot;&gt;&lt;i class=&quot;far fa-plus text-base mr-2&quot;&gt;&lt;/i&gt;Button text&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;bg-link px-4 py-3 text-base font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive&quot;&gt;&lt;i class=&quot;far fa-plus text-base mr-2&quot;&gt;&lt;/i&gt;Button text&lt;/button&gt;</code></pre>
+<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;bg-link px-2 py-1 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive&quot;&gt;&lt;i class=&quot;fa-sharp fa-solid fa-plus text-base w-4 mr-2&quot;&gt;&lt;/i&gt;Button text&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;bg-link px-3 py-2 text-sm font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive&quot;&gt;&lt;i class=&quot;fa-sharp fa-solid fa-plus text-base w-4 mr-2&quot;&gt;&lt;/i&gt;Button text&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;bg-link px-4 py-3 text-base font-medium text-white hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive&quot;&gt;&lt;i class=&quot;fa-sharp fa-solid fa-plus text-base w-4 mr-2&quot;&gt;&lt;/i&gt;Button text&lt;/button&gt;
+</code></pre>
       
           <h2 class="mt-8 text-lg">Button Icon Primary</h2>
           <div class="my-8 space-x-4">
-            <button type="button" class="bg-link px-2 py-1.5 text-white leading-4 hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive"><i class="far fa-plus text-base w-4"></i></button>
-            <button type="button" class="bg-link px-3 py-2.5 text-white leading-4 hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive"><i class="far fa-plus text-base w-4"></i></button>
-            <button type="button" class="bg-link px-4 py-4 text-white leading-4 hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive"><i class="far fa-plus text-base w-4"></i></button>
+
+            <button type="button" class="bg-link p-1.5 text-white leading-4 hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive"><i class="fa-sharp fa-solid fa-plus text-base w-4"></i></button>
+            <button type="button" class="bg-link p-2.5 text-white leading-4 hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive"><i class="fa-sharp fa-solid fa-plus text-base w-4"></i></button>
+            <button type="button" class="bg-link p-4 text-white leading-4 hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive"><i class="fa-sharp fa-solid fa-plus text-base w-4"></i></button>
+          
           </div>
-<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;bg-link px-2 py-1.5 text-white leading-4 hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive&quot;&gt;&lt;i class=&quot;far fa-plus text-base w-4&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;bg-link px-3 py-2.5 text-white leading-4 hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive&quot;&gt;&lt;i class=&quot;far fa-plus text-base w-4&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;bg-link px-4 py-4 text-white leading-4 hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive&quot;&gt;&lt;i class=&quot;far fa-plus text-base w-4&quot;&gt;&lt;/i&gt;&lt;/button&gt;</code></pre>
+<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;bg-link p-1.5 text-white leading-4 hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive&quot;&gt;&lt;i class=&quot;fa-sharp fa-solid fa-plus text-base w-4&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;bg-link p-2.5 text-white leading-4 hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive&quot;&gt;&lt;i class=&quot;fa-sharp fa-solid fa-plus text-base w-4&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;bg-link p-4 text-white leading-4 hover:bg-linkHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-linkActive&quot;&gt;&lt;i class=&quot;fa-sharp fa-solid fa-plus text-base w-4&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+</code></pre>
       
           <h2 class="mt-8 text-lg">Button Icon Secondary</h2>
           <div class="my-8 space-x-4">
-            <button type="button" class="px-2 py-1.5 text-highEmphasis leading-4 ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400"><i class="far fa-plus text-base w-4"></i></button>
-            <button type="button" class="px-3 py-2.5 text-highEmphasis leading-4 ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400"><i class="far fa-plus text-base w-4"></i></button>
-            <button type="button" class="px-4 py-4 text-highEmphasis leading-4 ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400"><i class="far fa-plus text-base w-4"></i></button>
+
+            <button type="button" class="p-1.5 text-highEmphasis leading-4 ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400"><i class="fa-sharp fa-solid fa-plus text-base w-4"></i></button>
+            <button type="button" class="p-2.5 text-highEmphasis leading-4 ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400"><i class="fa-sharp fa-solid fa-plus text-base w-4"></i></button>
+            <button type="button" class="p-4 text-highEmphasis leading-4 ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400"><i class="fa-sharp fa-solid fa-plus text-base w-4"></i></button>
+
           </div>
-<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;px-2 py-1.5 text-highEmphasis leading-4 ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400&quot;&gt;&lt;i class=&quot;far fa-plus text-base w-4&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;px-3 py-2.5 text-highEmphasis leading-4 ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400&quot;&gt;&lt;i class=&quot;far fa-plus text-base w-4&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;px-4 py-4 text-highEmphasis leading-4 ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400&quot;&gt;&lt;i class=&quot;far fa-plus text-base w-4&quot;&gt;&lt;/i&gt;&lt;/button&gt;</code></pre>
+<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;p-1.5 text-highEmphasis leading-4 ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400&quot;&gt;&lt;i class=&quot;fa-sharp fa-solid fa-plus text-base w-4&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;p-2.5 text-highEmphasis leading-4 ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400&quot;&gt;&lt;i class=&quot;fa-sharp fa-solid fa-plus text-base w-4&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;p-4 text-highEmphasis leading-4 ring-1 ring-inset ring-border hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-blue-500 active:bg-gray-400 active:ring-gray-400&quot;&gt;&lt;i class=&quot;fa-sharp fa-solid fa-plus text-base w-4&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+</code></pre>
           
           <h2 class="text-xl font-medium mt-8">Vue code</h2>
           <p class="text-highEmphasis mt-4">For the Vue code, visit the <a href="https://tailwindui.com/components/application-ui/elements/buttons" class="text-link hover:underline" target="_blank">Tailwind UI buttons page</a>.</p>

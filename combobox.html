@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Combobox</title>
   <link href="dist/styles.css" rel="stylesheet">
-  <link href="dist/fontawesome/all.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6cb3dcd5fc.js" crossorigin="anonymous"></script>
   <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
   <link href="dist/prism/prism.css" rel="stylesheet">
   <script src="dist/prism/prism.js"></script>
@@ -36,13 +36,14 @@
               <div class="relative mt-2">
                 <input id="combobox" type="text" class="w-full border-0 bg-white py-1.5 pl-3 pr-12 text-highEmphasis ring-1 ring-inset ring-border focus:ring-2 focus:ring-inset focus:ring-focusRing sm:text-sm sm:leading-6" role="combobox" aria-controls="options" aria-expanded="false" value="First option">
                 <button type="button" class="absolute inset-y-0 right-0 flex items-center px-3 focus:outline-none">
-                  <i class="far fa-chevron-down fa-sm text-mediumEmphasis"></i>
+                    <script src="https://kit.fontawesome.com/6cb3dcd5fc.js" crossorigin="anonymous"></script>
+                    <i class="fa-sharp fa-regular fa-chevron-down text-xs text-mediumEmphasis"></i>
                 </button>
                 <ul class="absolute z-10 mt-1 max-h-60 w-full overflow-auto bg-white py-1 text-base shadow-md ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm" id="options" role="listbox">
                   <li class="bg-link text-white relative cursor-default select-none py-2 pl-3 pr-9" id="listbox-option-1" role="option" tabindex="-1">
                     <span class="font-semibold block truncate">First option</span>
                     <span class="text-white absolute inset-y-0 right-0 flex items-center pr-4">
-                      <i class="far fa-check"></i>
+                      <i class="fa-sharp fa-solid fa-check"></i>
                     </span>
                   </li>
                   <li class="text-highEmphasis relative cursor-default select-none py-2 pl-3 pr-9 hover:bg-gray-100" id="listbox-option-2" role="option">
@@ -64,13 +65,13 @@
   &lt;div class=&quot;relative mt-2&quot;&gt;
     &lt;input id=&quot;combobox&quot; type=&quot;text&quot; class=&quot;w-full border-0 bg-white py-1.5 pl-3 pr-12 text-highEmphasis ring-1 ring-inset ring-border focus:ring-2 focus:ring-inset focus:ring-focusRing sm:text-sm sm:leading-6&quot; role=&quot;combobox&quot; aria-controls=&quot;options&quot; aria-expanded=&quot;false&quot; value=&quot;First option&quot;&gt;
     &lt;button type=&quot;button&quot; class=&quot;absolute inset-y-0 right-0 flex items-center px-3 focus:outline-none&quot;&gt;
-      &lt;i class=&quot;far fa-chevron-down fa-sm text-mediumEmphasis&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;fa-sharp fa-regular fa-chevron-down text-xs text-mediumEmphasis&quot;&gt;&lt;/i&gt;
     &lt;/button&gt;
     &lt;ul class=&quot;absolute z-10 mt-1 max-h-60 w-full overflow-auto bg-white py-1 text-base shadow-md ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm&quot; id=&quot;options&quot; role=&quot;listbox&quot;&gt;
       &lt;li class=&quot;bg-link text-white relative cursor-default select-none py-2 pl-3 pr-9&quot; id=&quot;listbox-option-1&quot; role=&quot;option&quot; tabindex=&quot;-1&quot;&gt;
         &lt;span class=&quot;font-semibold block truncate&quot;&gt;First option&lt;/span&gt;
         &lt;span class=&quot;text-white absolute inset-y-0 right-0 flex items-center pr-4&quot;&gt;
-          &lt;i class=&quot;far fa-check&quot;&gt;&lt;/i&gt;
+          &lt;i class=&quot;fa-sharp fa-solid fa-check&quot;&gt;&lt;/i&gt;
         &lt;/span&gt;
       &lt;/li&gt;
       &lt;li class=&quot;text-highEmphasis relative cursor-default select-none py-2 pl-3 pr-9 hover:bg-gray-100&quot; id=&quot;listbox-option-2&quot; role=&quot;option&quot;&gt;
